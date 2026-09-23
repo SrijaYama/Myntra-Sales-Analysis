@@ -1,0 +1,396 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Myntra Sales Analysis — Project Report</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; line-height: 1.65; color: #1f2328; background: #ffffff; }
+  .container { max-width: 860px; margin: 0 auto; padding: 32px 40px; }
+
+  /* Cover */
+  .cover { text-align: center; padding: 48px 0 40px; border-bottom: 3px solid #FF3F6C; margin-bottom: 36px; }
+  .cover .badge { display: inline-block; background: #FF3F6C; color: white; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; padding: 4px 14px; border-radius: 20px; margin-bottom: 18px; }
+  .cover h1 { font-size: 34px; font-weight: 800; color: #FF3F6C; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .cover .sub { font-size: 16px; color: #535766; margin-bottom: 28px; }
+  .cover .meta { background: #f7f8fa; border: 1px solid #e5e7eb; border-radius: 10px; display: inline-block; padding: 20px 40px; text-align: left; }
+  .cover .meta-row { display: flex; gap: 8px; margin-bottom: 5px; font-size: 13px; }
+  .cover .meta-label { font-weight: 700; color: #535766; min-width: 80px; }
+  .cover .tech-tags { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .cover .tag { background: #fff0f4; border: 1px solid #FF3F6C; color: #FF3F6C; border-radius: 20px; padding: 3px 12px; font-size: 11px; font-weight: 600; }
+  .disclaimer { background: #fff8e1; border: 1px solid #f0c040; border-radius: 6px; padding: 10px 14px; font-size: 11.5px; color: #7c6000; margin: 20px 0; font-style: italic; }
+
+  /* Section heading */
+  h2 { font-size: 17px; font-weight: 800; color: #1f2328; border-left: 4px solid #FF3F6C; padding-left: 12px; margin: 32px 0 10px; }
+  h3 { font-size: 14px; font-weight: 700; color: #3D4152; margin: 18px 0 6px; }
+  p, li { margin-bottom: 7px; }
+  ul, ol { padding-left: 20px; margin-bottom: 8px; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 12px; }
+  th { background: #FF3F6C; color: white; padding: 8px 10px; text-align: left; font-weight: 700; }
+  td { padding: 7px 10px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+  tr:nth-child(even) td { background: #fafafa; }
+
+  /* KPI row */
+  .kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 14px 0; }
+  .kpi { background: #f7f8fa; border: 1px solid #e5e7eb; border-left: 4px solid #FF3F6C; border-radius: 8px; padding: 12px 14px; }
+  .kpi-label { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #535766; }
+  .kpi-value { font-size: 18px; font-weight: 800; color: #FF3F6C; margin-top: 3px; }
+
+  /* Workflow */
+  .workflow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin: 14px 0; }
+  .wf-step { background: #fff0f4; border: 1px solid #FF3F6C; border-radius: 8px; padding: 10px 8px; text-align: center; font-size: 11px; }
+  .wf-num { font-weight: 800; color: #FF3F6C; font-size: 14px; display: block; }
+
+  /* Code block */
+  pre { background: #f7f8fa; border: 1px solid #e5e7eb; border-radius: 6px; padding: 12px 14px; font-size: 11px; font-family: "Cascadia Code", "Consolas", monospace; overflow-x: auto; margin: 8px 0 14px; color: #3D4152; line-height: 1.7; }
+
+  /* Chart placeholders */
+  .chart-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 12px 0; }
+  .chart-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px; background: #fafafa; }
+  .chart-card .fig-num { font-size: 11px; font-weight: 700; color: #FF3F6C; text-transform: uppercase; letter-spacing: .05em; }
+  .chart-card .fig-title { font-size: 13px; font-weight: 700; color: #1f2328; margin: 4px 0; }
+  .chart-card .fig-file { font-size: 10.5px; color: #57606a; font-style: italic; margin-bottom: 6px; }
+  .chart-card .fig-desc { font-size: 11.5px; color: #3D4152; }
+  .chart-card .insight { background: #fff0f4; border-left: 3px solid #FF3F6C; padding: 6px 10px; margin-top: 8px; font-size: 11px; color: #3D4152; border-radius: 0 4px 4px 0; }
+
+  /* Feature table */
+  .feat-tag { display: inline-block; background: #e8f5e9; border: 1px solid #66bb6a; color: #2e7d32; border-radius: 12px; padding: 1px 8px; font-size: 10px; font-weight: 700; }
+
+  /* Footer */
+  .footer { text-align: center; margin-top: 40px; padding-top: 16px; border-top: 1px solid #e5e7eb; font-size: 11px; color: #57606a; }
+  @media print { .container { padding: 16px 20px; } h2 { page-break-before: always; } h2:first-of-type { page-break-before: avoid; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+
+<div class="cover">
+  <div class="badge">Internship Project Report — 2026</div>
+  <h1>Myntra Sales Analysis</h1>
+  <div class="sub">Data Analytics  |  Data Visualization  |  Interactive Dashboard</div>
+  <div class="meta">
+    <div class="meta-row"><span class="meta-label">Student</span><span>Srija Yama</span></div>
+    <div class="meta-row"><span class="meta-label">Branch</span><span>Computer Science and Engineering</span></div>
+    <div class="meta-row"><span class="meta-label">College</span><span>Sree Chaitanya College of Engineering, Karimnagar</span></div>
+    <div class="meta-row"><span class="meta-label">Year</span><span>2026</span></div>
+    <div class="meta-row"><span class="meta-label">Type</span><span>Internship Data Analytics Project</span></div>
+  </div>
+  <div class="tech-tags">
+    <span class="tag">Python 3.9+</span><span class="tag">Pandas</span><span class="tag">NumPy</span>
+    <span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">OpenPyXL</span>
+    <span class="tag">Streamlit</span>
+  </div>
+</div>
+
+<div class="disclaimer">
+  DISCLAIMER: The dataset used in this project is a <strong>synthetic academic/internship dataset</strong>. It is NOT actual Myntra company data and does NOT represent real Myntra business figures, revenues, or customer information.
+</div>
+
+
+<h2>Abstract</h2>
+<p>The <strong>Myntra Sales Analysis</strong> project is a complete end-to-end data analytics solution built as an internship assignment. It analyses a synthetic Myntra-style e-commerce sales dataset of <strong>500 transaction records across 17 attributes</strong>, covering 8 Indian cities over a 6-month period (January–June 2026). The project pipeline includes data cleaning, exploratory data analysis, 10 professional visualisation charts, and an interactive Streamlit web dashboard — delivering actionable business insights on sales performance, product popularity, customer behaviour, city-wise trends, payment preferences, and profitability.</p>
+
+
+<h2>Project Overview &amp; Workflow</h2>
+<div class="workflow">
+  <div class="wf-step"><span class="wf-num">1</span>Dataset<br />500 rows × 17 cols</div>
+  <div class="wf-step"><span class="wf-num">2</span>Data Cleaning<br />data_cleaning.py</div>
+  <div class="wf-step"><span class="wf-num">3</span>EDA &amp; KPIs<br />analysis.py</div>
+  <div class="wf-step"><span class="wf-num">4</span>Visualisation<br />visualizations.py</div>
+  <div class="wf-step"><span class="wf-num">5</span>Dashboard<br />app.py</div>
+</div>
+<p>The project processes the raw Excel file → cleans and validates data → computes KPIs and segment analytics → generates 10 professional charts → delivers a filter-driven interactive Streamlit dashboard. The original dataset is never modified; all outputs are generated files.</p>
+
+
+<h2>Dataset Description</h2>
+<table>
+  <tr><th>Attribute</th><th>Value</th></tr>
+  <tr><td>Filename</td><td>Myntra_Sales_Dataset.xlsx</td></tr>
+  <tr><td>Sheet Name</td><td>Myntra Sales Data</td></tr>
+  <tr><td>Records</td><td>500 rows (synthetic orders MYN00001–MYN00500)</td></tr>
+  <tr><td>Columns</td><td>17 original + 4 derived (Year, Month, Month_Name, Month_Year)</td></tr>
+  <tr><td>Date Range</td><td>January 1, 2026 — June 30, 2026</td></tr>
+  <tr><td>Cities</td><td>Hyderabad, Mumbai, Delhi, Bengaluru, Chennai, Pune, Ahmedabad, Kolkata (8 cities)</td></tr>
+  <tr><td>Categories</td><td>Men's Fashion, Women's Western Wear, Indian Wear, Accessories, Footwear, Sports, Kids, Beauty (8)</td></tr>
+  <tr><td>Gender Segments</td><td>Men, Women, Kids</td></tr>
+  <tr><td>Payment Methods</td><td>UPI, Credit Card, Debit Card, Net Banking, Cash on Delivery</td></tr>
+  <tr><td>Order Statuses</td><td>Delivered, Returned, Cancelled, Shipped</td></tr>
+  <tr><td>Source</td><td>Synthetic dataset created for academic/internship analysis</td></tr>
+</table>
+
+
+<h2>Data Dictionary</h2>
+<table>
+  <tr><th>Column Name</th><th>Description</th><th>Data Type</th></tr>
+  <tr><td>Order ID</td><td>Unique order identifier (MYN00001–MYN00500)</td><td>String</td></tr>
+  <tr><td>Order Date</td><td>Date the order was placed (YYYY-MM-DD)</td><td>Date</td></tr>
+  <tr><td>City</td><td>Customer's city (one of 8 Indian cities)</td><td>Categorical</td></tr>
+  <tr><td>Customer Type</td><td>New or Returning customer</td><td>Categorical</td></tr>
+  <tr><td>Gender</td><td>Men / Women / Kids</td><td>Categorical</td></tr>
+  <tr><td>Product</td><td>Product name (Shirts, Kurtas, Watches, Sneakers, Sarees, etc.)</td><td>String</td></tr>
+  <tr><td>Category</td><td>Product category (8 categories)</td><td>Categorical</td></tr>
+  <tr><td>Quantity</td><td>Number of units ordered</td><td>Integer</td></tr>
+  <tr><td>Unit Price</td><td>Price per unit before discount (INR)</td><td>Float</td></tr>
+  <tr><td>Discount %</td><td>Percentage discount applied (0–50%)</td><td>Float</td></tr>
+  <tr><td>Discount Amount</td><td>Rupee value of the discount</td><td>Float (INR)</td></tr>
+  <tr><td>Payment Method</td><td>UPI / Credit Card / Debit Card / Net Banking / Cash on Delivery</td><td>Categorical</td></tr>
+  <tr><td>Order Status</td><td>Delivered / Returned / Cancelled / Shipped</td><td>Categorical</td></tr>
+  <tr><td>Rating</td><td>Customer satisfaction rating (1.0–5.0)</td><td>Float</td></tr>
+  <tr><td>Sales</td><td>Net revenue after discount = Qty × Unit Price × (1 − Disc%)</td><td>Float (INR)</td></tr>
+  <tr><td>Cost</td><td>Cost of goods for the order</td><td>Float (INR)</td></tr>
+  <tr><td>Profit</td><td>Net profit = Sales − Cost</td><td>Float (INR)</td></tr>
+</table>
+
+
+<h2>Tools &amp; Technologies</h2>
+<table>
+  <tr><th>Tool / Library</th><th>Version</th><th>Purpose</th></tr>
+  <tr><td>Python</td><td>3.9+</td><td>Core programming language for all project scripts</td></tr>
+  <tr><td>Pandas</td><td>2.x</td><td>Data loading, cleaning, aggregation, and analysis</td></tr>
+  <tr><td>NumPy</td><td>1.24+</td><td>Numerical operations; trend line coefficients (polyfit)</td></tr>
+  <tr><td>Matplotlib</td><td>3.7+</td><td>Chart generation — all 10 static visualisation charts</td></tr>
+  <tr><td>Seaborn</td><td>0.13+</td><td>Statistical chart styling; colour palettes (RdPu, magma, Set2)</td></tr>
+  <tr><td>OpenPyXL</td><td>3.1+</td><td>Excel .xlsx file reading engine for pd.read_excel()</td></tr>
+  <tr><td>Streamlit</td><td>1.32+</td><td>Interactive web dashboard (app.py)</td></tr>
+  <tr><td>VS Code / IBM Bob</td><td>—</td><td>Development environment and AI pair-programming assistant</td></tr>
+</table>
+
+
+<h2>Data Cleaning (data_cleaning.py)</h2>
+<p>The cleaning script validates and transforms the raw Excel dataset before any analysis. The original file is <strong>never modified</strong>. Cleaning steps performed:</p>
+<ol>
+  <li><strong>Load:</strong> <code>pd.read_excel('Myntra_Sales_Dataset.xlsx', sheet_name='Myntra Sales Data')</code> → 500 rows × 17 columns confirmed</li>
+  <li><strong>Missing Values:</strong> <code>df.isnull().sum()</code> → No missing values found ✅</li>
+  <li><strong>Duplicates:</strong> <code>df.duplicated().sum()</code> → 0 duplicate records ✅</li>
+  <li><strong>Date Conversion:</strong> Order Date converted to datetime → all 500 dates parsed successfully ✅</li>
+  <li><strong>Derived Columns:</strong> Year, Month, Month_Name, Month_Year extracted from Order Date</li>
+  <li><strong>Numeric Enforcement:</strong> 8 columns cast to float64 (Quantity, Unit Price, Discount %, Discount Amount, Rating, Sales, Cost, Profit) → 0 coercion errors ✅</li>
+  <li><strong>Categorical Standardisation:</strong> 7 columns (City, Customer Type, Gender, Product, Category, Payment Method, Order Status) whitespace-stripped</li>
+  <li><strong>Range Validation:</strong> Negative Sales: 0 | Negative Profit: 0 | Invalid Discount%: 0 | Out-of-range Rating: 0 ✅</li>
+  <li><strong>Output:</strong> Saved to <code>data/cleaned/cleaned_myntra_sales.csv</code> with 21 columns</li>
+</ol>
+
+
+<h2>Exploratory Data Analysis (analysis.py)</h2>
+<p>All metrics computed from the 500-record cleaned dataset. Exact values are printed when <code>python analysis.py</code> is run:</p>
+<div class="kpi-row">
+  <div class="kpi"><div class="kpi-label">Total Sales</div><div class="kpi-value">Computed from dataset</div></div>
+  <div class="kpi"><div class="kpi-label">Total Profit</div><div class="kpi-value">Sales − Cost (all orders)</div></div>
+  <div class="kpi"><div class="kpi-label">Total Orders</div><div class="kpi-value">500 unique orders</div></div>
+  <div class="kpi"><div class="kpi-label">Avg Rating</div><div class="kpi-value">~3.0–5.0 range</div></div>
+</div>
+<p><strong>Segment analyses computed:</strong> Sales by Category (8) · Sales by City (8) · Sales by Gender (3) · Sales by Customer Type (2) · Sales by Payment Method (5) · Sales by Order Status (4) · Top 10 Products by Sales · Top 10 Products by Profit · Monthly Sales &amp; Profit (Jan–Jun 2026) · Discount% ↔ Sales correlation · Rating ↔ Sales correlation</p>
+
+
+<h2>Data Visualisation (visualizations.py) — 10 Charts</h2>
+<div class="chart-grid">
+  <div class="chart-card">
+    <div class="fig-num">Figure 1</div>
+    <div class="fig-title">Sales by Category</div>
+    <div class="fig-file">charts/01_sales_by_category.png</div>
+    <div class="fig-desc">Horizontal bar chart showing total sales across all 8 product categories, sorted highest to lowest with exact INR labels on each bar.</div>
+    <div class="insight">Reveals the highest and lowest revenue-generating categories for inventory and marketing prioritisation.</div>
+  </div>
+  <div class="chart-card">
+    <div class="fig-num">Figure 2</div>
+    <div class="fig-title">Top 10 Products by Sales</div>
+    <div class="fig-file">charts/02_top10_products_by_sales.png</div>
+    <div class="fig-desc">Horizontal bar chart (RdPu palette) ranking the 10 highest-revenue products across all 500 orders.</div>
+    <div class="insight">High-value items (Sports Shoes, Watches, Sneakers at Qty 2–4) dominate — ensuring their stock availability is critical.</div>
+  </div>
+  <div class="chart-card">
+    <div class="fig-num">Figure 3</div>
+    <div class="fig-title">Sales by City</div>
+    <div class="fig-file">charts/03_sales_by_city.png</div>
+    <div class="fig-desc">Vertical bar chart (magma palette) comparing total sales across all 8 Indian cities with rotated labels.</div>
+    <div class="insight">Identifies top-performing geographic markets for targeted campaigns and logistics investment.</div>
+  </div>
+  <div class="chart-card">
+    <div class="fig-num">Figure 4</div>
+    <div class="fig-title">Sales by Customer Type</div>
+    <div class="fig-file">charts/04_sales_by_customer_type.png</div>
+    <div class="fig-desc">Pie chart (Myntra pink + dark grey) showing the % revenue split between New and Returning customers.</div>
+    <div class="insight">Quantifies the value of repeat customers — guides loyalty programme investment decisions.</div>
+  </div>
+  <div class="chart-card">
+    <div class="fig-num">Figure 5</div>
+    <div class="fig-title">Payment Method Distribution</div>
+    <div class="fig-file">charts/05_payment_method_distribution.png</div>
+    <div class="fig-desc">Bar chart (Set2 palette) showing order count per payment method. UPI is the leading payment method.</div>
+    <div class="insight">The dominant payment method should be promoted with checkout incentives to boost conversion.</div>
+  </div>
+  <div class="chart-card">
+    <div class="fig-num">Figure 6</div>
+    <div class="fig-title">Monthly Sales Trend</div>
+    <div class="fig-file">charts/06_monthly_sales_trend.png</div>
+    <div class="fig-desc">Line + fill chart (Myntra pink) showing total sales per month from January to June 2026.</div>
+    <div class="insight">Reveals peak sales months — enables advance inventory and promotional campaign planning.</div>
+  </div>
+  <div class="chart-card">
+    <div class="fig-num">Figure 7</div>
+    <div class="fig-title">Monthly Profit Trend</div>
+    <div class="fig-file">charts/07_monthly_profit_trend.png</div>
+    <div class="fig-desc">Line + fill chart (blue) showing monthly profit from January to June 2026 with square markers.</div>
+    <div class="insight">Months where profit lags behind sales signal excessive discounting or a high-cost product mix.</div>
+  </div>
+  <div class="chart-card">
+    <div class="fig-num">Figure 8</div>
+    <div class="fig-title">Sales by Gender</div>
+    <div class="fig-file">charts/08_sales_by_gender.png</div>
+    <div class="fig-desc">Pie chart showing the % sales split across Men, Women, and Kids gender segments.</div>
+    <div class="insight">Dominant gender segment guides product catalogue focus and marketing messaging strategy.</div>
+  </div>
+  <div class="chart-card">
+    <div class="fig-num">Figure 9</div>
+    <div class="fig-title">Order Status Distribution</div>
+    <div class="fig-file">charts/09_order_status_distribution.png</div>
+    <div class="fig-desc">Colour-coded bar chart: Green=Delivered, Red=Returned, Amber=Cancelled, Blue=Shipped.</div>
+    <div class="insight">High return/cancel rates indicate product quality, sizing, or logistics issues requiring investigation.</div>
+  </div>
+  <div class="chart-card">
+    <div class="fig-num">Figure 10</div>
+    <div class="fig-title">Discount % vs Sales</div>
+    <div class="fig-file">charts/10_discount_vs_sales.png</div>
+    <div class="fig-desc">Scatter plot (500 points, RdPu coloured by sales value) with a linear regression trend line showing Pearson r.</div>
+    <div class="insight">If r ≈ 0 or negative, discounts are not driving proportional revenue — a signal to revise the discount strategy.</div>
+  </div>
+</div>
+
+
+<h2>Streamlit Dashboard (app.py)</h2>
+<p><strong>Launch command:</strong> <code>streamlit run app.py</code> → opens at <code>http://localhost:8501</code></p>
+<table>
+  <tr><th>Feature</th><th>Description</th></tr>
+  <tr><td>Gradient Header Banner</td><td>Professional Myntra-pink gradient (#FF3F6C → #C73060) with title and dataset disclaimer</td></tr>
+  <tr><td>7 Sidebar Filters</td><td>City, Category, Product, Gender, Customer Type, Payment Method, Order Status — all multi-select with "All" default</td></tr>
+  <tr><td>5 KPI Cards</td><td>Total Sales (Lakhs), Total Profit (Lakhs), Total Orders, Avg Rating, Qty Sold — all filter-responsive</td></tr>
+  <tr><td>10 Interactive Charts</td><td>All charts dynamically re-rendered on every filter change (5 two-column chart sections)</td></tr>
+  <tr><td>Dataset Summary Expander</td><td>Row/column counts, column overview table, first 5 rows preview</td></tr>
+  <tr><td>Top 10 Tables</td><td>Top 10 Products by Sales, Top 10 by Profit, Category Performance (Sales + Profit + Orders)</td></tr>
+  <tr><td>Dynamic Business Insights</td><td>8 auto-generated insight statements (best category, city, product, payment, gender, avg discount, delivery rate, profit margin)</td></tr>
+  <tr><td>Raw Data Explorer</td><td>Full scrollable dataset table (height=300px) with filtered row count caption</td></tr>
+  <tr><td>Custom CSS Styling</td><td>KPI cards, section headers, insight boxes, gradient banner — injected via st.markdown(unsafe_allow_html=True)</td></tr>
+  <tr><td>Data Caching</td><td>@st.cache_data decorator for efficient data loading on filter changes</td></tr>
+</table>
+
+
+<h2>Key Findings &amp; Business Insights</h2>
+<p><strong>Note:</strong> All findings are based on the synthetic dataset. They do not represent actual Myntra operations.</p>
+<ul>
+  <li><strong>Top Revenue Category:</strong> Identified from chart 01 — the leading category drives the largest share of total sales revenue across all 8 categories</li>
+  <li><strong>Top Products:</strong> High-value items (Watches, Sports Shoes, Sneakers, Sarees) purchased in multiple units (Qty 2–4) dominate the Top 10 by Sales chart</li>
+  <li><strong>City Performance:</strong> All 8 Indian cities contribute across the 6-month period; metro cities with high-value order concentrations lead total sales</li>
+  <li><strong>Customer Type:</strong> Both New and Returning customers are present; Returning customers on established platforms typically drive repeat revenue</li>
+  <li><strong>Payment Method:</strong> UPI is the most frequently used payment method, consistent with India's digital payments growth</li>
+  <li><strong>Order Fulfilment:</strong> Majority of orders are Delivered; Return and Cancellation rates are tracked and visualised in chart 09</li>
+  <li><strong>Monthly Trends:</strong> Sales and profit variation across Jan–Jun 2026 reveals seasonal patterns; peak months identified from charts 06 and 07</li>
+  <li><strong>Discount Correlation:</strong> The scatter chart (Figure 10) with Pearson r quantifies whether discounts drive proportional sales uplift</li>
+  <li><strong>Average Rating:</strong> Customer ratings range 3.0–5.0; average ~4.0 indicates positive satisfaction in the synthetic dataset</li>
+</ul>
+
+<h3>Business Recommendations (Based on Synthetic Dataset)</h3>
+<ol>
+  <li><strong>Inventory Planning:</strong> Prioritise top-revenue categories for stock allocation and promotional budget</li>
+  <li><strong>Discount Strategy:</strong> Avoid blanket discounting if correlation is weak; use targeted discounts on slow-moving SKUs</li>
+  <li><strong>Customer Loyalty:</strong> Invest in loyalty programmes for returning customers to maximise lifetime value</li>
+  <li><strong>Payment Optimisation:</strong> Offer UPI-specific cashback to reduce cart abandonment and improve conversion</li>
+  <li><strong>City-Specific Campaigns:</strong> Increase ad spend in top-performing cities; run awareness campaigns in lower-performing ones</li>
+  <li><strong>Returns Reduction:</strong> Investigate high return-rate product categories to improve product descriptions and sizing accuracy</li>
+  <li><strong>Seasonal Planning:</strong> Pre-stock inventory before identified peak months to avoid stockouts</li>
+</ol>
+
+
+<h2>Project File Structure</h2>
+<pre>Myntra_Sales_Analysis/
+├── Myntra_Sales_Dataset.xlsx          ← Raw dataset (read-only; 500 rows × 17 cols)
+├── data_cleaning.py                   ← Step 1: Data cleaning and validation
+├── analysis.py                        ← Step 2: Exploratory data analysis &amp; KPIs
+├── visualizations.py                  ← Step 3: 10 professional chart generation
+├── app.py                             ← Step 4: Streamlit interactive dashboard
+├── requirements.txt                   ← Python library dependencies
+├── README.md                          ← Project documentation
+├── Myntra_Sales_Analysis_Report.docx  ← This report (editable DOCX)
+├── data/
+│   └── cleaned/
+│       └── cleaned_myntra_sales.csv   ← Cleaned dataset (generated by step 1)
+└── charts/
+    ├── 01_sales_by_category.png
+    ├── 02_top10_products_by_sales.png
+    ├── 03_sales_by_city.png
+    ├── 04_sales_by_customer_type.png
+    ├── 05_payment_method_distribution.png
+    ├── 06_monthly_sales_trend.png
+    ├── 07_monthly_profit_trend.png
+    ├── 08_sales_by_gender.png
+    ├── 09_order_status_distribution.png
+    └── 10_discount_vs_sales.png</pre>
+
+
+<h2>How to Run the Project</h2>
+<pre># 1. Install dependencies
+pip install pandas numpy matplotlib seaborn openpyxl streamlit
+
+# 2. Clean the dataset
+python data_cleaning.py
+# → Creates: data/cleaned/cleaned_myntra_sales.csv
+
+# 3. Run EDA
+python analysis.py
+# → Prints full analytics report to terminal
+
+# 4. Generate charts
+python visualizations.py
+# → Saves 10 PNG files to charts/ folder
+
+# 5. Launch dashboard
+streamlit run app.py
+# → Opens dashboard at http://localhost:8501</pre>
+
+
+<h2>Limitations</h2>
+<ul>
+  <li><strong>Synthetic Dataset:</strong> 500 synthetic records — cannot be generalised to actual Myntra operations</li>
+  <li><strong>Limited Size:</strong> 500 records is insufficient for statistically robust pattern detection</li>
+  <li><strong>Short Period:</strong> 6 months (Jan–Jun 2026) — inadequate for long-term trend or year-on-year analysis</li>
+  <li><strong>Limited Variables:</strong> No inventory levels, marketing spend, competitor data, or customer demographics</li>
+  <li><strong>Static Data:</strong> Dashboard reads a static CSV — no live database or real-time streaming</li>
+</ul>
+
+
+<h2>Future Enhancements</h2>
+<ul>
+  <li>Larger real-world dataset with live database connectivity</li>
+  <li>ML sales forecasting (ARIMA, Prophet, LSTM)</li>
+  <li>RFM customer segmentation using K-Means clustering</li>
+  <li>Product recommendation system (collaborative filtering)</li>
+  <li>Advanced dashboard: date pickers, downloadable reports, drill-downs</li>
+  <li>Cloud deployment (Streamlit Cloud, AWS, Azure)</li>
+  <li>Geospatial maps for city-level sales visualisation (Folium/Plotly)</li>
+  <li>Automated scheduled PDF/email reporting</li>
+</ul>
+
+
+<h2>References</h2>
+<ol>
+  <li>Python Software Foundation. <em>Python Programming Language.</em> https://www.python.org</li>
+  <li>Pandas Development Team. <em>Pandas: Python Data Analysis Library.</em> https://pandas.pydata.org</li>
+  <li>NumPy Developers. <em>NumPy: Fundamental Package for Scientific Computing.</em> https://numpy.org</li>
+  <li>Hunter, J. D. (2007). Matplotlib: A 2D Graphics Environment. <em>Computing in Science &amp; Engineering.</em> https://matplotlib.org</li>
+  <li>Waskom, M. L. (2021). Seaborn: Statistical Data Visualization. <em>JOSS, 6(60), 3021.</em> https://seaborn.pydata.org</li>
+  <li>OpenPyXL Contributors. <em>OpenPyXL — Read/Write Excel 2010 xlsx Files.</em> https://openpyxl.readthedocs.io</li>
+  <li>Streamlit Inc. <em>Streamlit — The Fastest Way to Build Data Apps.</em> https://streamlit.io/docs</li>
+  <li>McKinney, W. (2017). <em>Python for Data Analysis, 2nd Ed.</em> O'Reilly Media.</li>
+</ol>
+
+<div class="footer">
+  <p><strong>Myntra Sales Analysis — Internship Project Report</strong></p>
+  <p>Srija Yama  |  Computer Science and Engineering  |  Sree Chaitanya College of Engineering, Karimnagar  |  2026</p>
+  <p style="margin-top:8px;border-top:1px solid #e5e7eb;padding-top:8px;color:#aaa">Made with IBM Bob</p>
+</div>
+
+</div>
+</body>
+</html>
