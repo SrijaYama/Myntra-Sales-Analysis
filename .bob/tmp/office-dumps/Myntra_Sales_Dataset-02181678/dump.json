@@ -1,0 +1,4178 @@
+{
+  "success": true,
+  "data": [
+    {
+      "command": "meta",
+      "dumpVersion": 2
+    },
+    {
+      "command": "set",
+      "path": "/",
+      "props": {
+        "calc.fullCalcOnLoad": "true",
+        "author": "openpyxl"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/sheet[1]",
+      "props": {
+        "name": "Myntra Sales Data"
+      }
+    },
+    {
+      "command": "import",
+      "parent": "/Myntra Sales Data",
+      "props": {
+        "start-cell": "A1"
+      },
+      "text": "Order ID,Order Date,City,Customer Type,Gender,Product,Category,Quantity,Unit Price,Discount %,Discount Amount,Payment Method,Order Status,Rating,Sales,Cost,Profit\nMYN00001,,Hyderabad,Returning,Women,Shirts,Men's Fashion,1,1011.21,20,202.24,UPI,Delivered,4,808.97,628.01,180.96\nMYN00002,,Pune,Returning,Kids,Kurtas,Indian Wear,1,1669.19,10,166.92,UPI,Delivered,4.1,1502.27,1058.37,443.9\nMYN00003,,Mumbai,Returning,Women,Sunglasses,Accessories,1,887.87,40,355.15,UPI,Returned,4.9,532.72,405.75,126.97\nMYN00004,,Bengaluru,Returning,Women,Watches,Accessories,1,3981.75,40,1592.7,UPI,Delivered,4.7,2389.05,1654.49,734.5599999999999\nMYN00005,,Mumbai,New,Women,Sneakers,Footwear,1,3338.94,40,1335.58,Net Banking,Cancelled,4.3,2003.36,1177.36,826\nMYN00006,,Chennai,Returning,Women,Shirts,Men's Fashion,1,1286.46,30,385.94,UPI,Delivered,3.9,900.52,625.67,274.85\nMYN00007,,Mumbai,Returning,Men,Beauty Products,Beauty,1,1440.39,30,432.12,Debit Card,Cancelled,3.9,1008.27,685.16,323.11\nMYN00008,,Delhi,New,Men,Sports T-Shirts,Sports,2,1959.97,10,391.99,Net Banking,Delivered,4.9,3527.95,2577.08,950.87\nMYN00009,,Mumbai,Returning,Women,Kids Dresses,Kids,1,1093.78,40,437.51,UPI,Delivered,3.4,656.27,374.33,281.94\nMYN00010,,Delhi,Returning,Men,Shirts,Men's Fashion,1,984.84,20,196.97,UPI,Delivered,3.3,787.87,471.34,316.53\nMYN00011,,Mumbai,New,Kids,T-Shirts,Men's Fashion,1,793.4299999999999,10,79.34,UPI,Delivered,3,714.09,434.92,279.17\nMYN00012,,Hyderabad,Returning,Kids,Kids T-Shirts,Kids,2,339.7,10,67.94,Net Banking,Delivered,3.3,611.46,427.87,183.59\nMYN00013,,Hyderabad,New,Kids,Kids Dresses,Kids,3,455.36,20,273.22,Net Banking,Shipped,4.6,1092.86,760.92,331.94\nMYN00014,,Hyderabad,Returning,Men,Watches,Accessories,1,3695.73,40,1478.29,UPI,Delivered,3.8,2217.44,1247.76,969.6799999999999\nMYN00015,,Pune,New,Kids,Kids T-Shirts,Kids,2,823.29,0,0,Cash on Delivery,Returned,4.2,1646.58,1097.11,549.47\nMYN00016,,Ahmedabad,New,Men,Dresses,Women's Western Wear,1,2958.27,30,887.48,Net Banking,Delivered,3.7,2070.79,1186.3,884.49\nMYN00017,,Bengaluru,New,Women,Sandals,Footwear,2,687.38,30,412.43,UPI,Delivered,4.2,962.33,724.92,237.41\nMYN00018,,Delhi,New,Kids,Sneakers,Footwear,2,1121.75,30,673.05,UPI,Delivered,4.9,1570.45,924.45,646\nMYN00019,,Pune,New,Kids,Shirts,Men's Fashion,1,1469.99,30,441,UPI,Delivered,3.9,1028.99,633.83,395.16\nMYN00020,,Bengaluru,Returning,Men,Beauty Products,Beauty,1,375.11,20,75.02,UPI,Shipped,5,300.09,190.94,109.15\nMYN00021,,Chennai,Returning,Women,Dresses,Women's Western Wear,1,1548.01,40,619.2,UPI,Delivered,4.1,928.8099999999999,576.96,351.85\nMYN00022,,Bengaluru,New,Kids,Heels,Footwear,2,2285.88,40,1828.7,UPI,Delivered,4.7,2743.06,1886.26,856.8\nMYN00023,,Mumbai,Returning,Women,Heels,Footwear,1,2541.14,30,762.34,Debit Card,Delivered,3.5,1778.8,1062.53,716.27\nMYN00024,,Ahmedabad,Returning,Kids,Heels,Footwear,4,2939.26,10,1175.7,UPI,Delivered,4.4,10581.34,7039.07,3542.27\nMYN00025,,Mumbai,New,Men,Sarees,Indian Wear,1,2258.76,40,903.5,Net Banking,Delivered,4.9,1355.26,957.74,397.52\nMYN00026,,Kolkata,Returning,Women,Kids T-Shirts,Kids,2,340.86,50,340.86,UPI,Returned,4.2,340.86,192.56,148.3\nMYN00027,,Bengaluru,Returning,Men,Perfume,Beauty,2,2140.08,10,428.02,UPI,Delivered,4.9,3852.14,2695.77,1156.37\nMYN00028,,Bengaluru,Returning,Kids,Sneakers,Footwear,1,3045.42,20,609.08,Debit Card,Delivered,3.4,2436.34,1365.91,1070.43\nMYN00029,,Ahmedabad,New,Men,Sarees,Indian Wear,1,1346.13,40,538.45,UPI,Delivered,3.9,807.6799999999999,481.38,326.3\nMYN00030,,Pune,New,Women,Sunglasses,Accessories,1,772.64,30,231.79,UPI,Delivered,3.6,540.85,379.11,161.74\nMYN00031,,Delhi,Returning,Women,Sports Shoes,Sports,1,2716.64,0,0,Net Banking,Delivered,3.9,2716.64,2008.29,708.35\nMYN00032,,Bengaluru,Returning,Women,Kids T-Shirts,Kids,1,737.89,10,73.79000000000001,Net Banking,Delivered,4,664.1,394.95,269.15\nMYN00033,,Chennai,New,Men,Sunglasses,Accessories,3,1066.32,40,1279.58,Debit Card,Delivered,3.1,1919.38,1467.09,452.29\nMYN00034,,Bengaluru,Returning,Women,Sports T-Shirts,Sports,3,1815.07,20,1089.04,Credit Card,Delivered,3,4356.17,2880.25,1475.92\nMYN00035,,Mumbai,New,Kids,T-Shirts,Men's Fashion,2,1297.88,30,778.73,Credit Card,Delivered,4.4,1817.03,1140.94,676.09\nMYN00036,,Bengaluru,New,Men,Perfume,Beauty,2,911.39,30,546.83,Debit Card,Delivered,4,1275.95,849.12,426.83\nMYN00037,,Ahmedabad,Returning,Kids,Sports Shoes,Sports,1,2348.27,20,469.65,UPI,Delivered,3.9,1878.62,1357.31,521.3099999999999\nMYN00038,,Hyderabad,New,Women,Sunglasses,Accessories,3,531.9,10,159.57,Cash on Delivery,Delivered,3.3,1436.13,1075.64,360.49\nMYN00039,,Chennai,New,Women,Dresses,Women's Western Wear,1,2536.77,10,253.68,UPI,Delivered,3.8,2283.09,1555.45,727.64\nMYN00040,,Ahmedabad,Returning,Women,Sports Shoes,Sports,2,2527.76,20,1011.1,Credit Card,Delivered,4,4044.42,3079.89,964.53\nMYN00041,,Kolkata,Returning,Kids,Kids Dresses,Kids,1,543.66,20,108.73,Debit Card,Delivered,4.1,434.93,314.66,120.27\nMYN00042,,Ahmedabad,Returning,Men,Tops,Women's Western Wear,2,1266.54,0,0,Cash on Delivery,Shipped,4.8,2533.08,1544.01,989.0700000000001\nMYN00043,,Pune,Returning,Men,Handbags,Accessories,1,1032.81,40,413.12,Net Banking,Returned,3.5,619.6900000000001,400.72,218.97\nMYN00044,,Chennai,New,Women,Beauty Products,Beauty,1,1356.88,20,271.38,Cash on Delivery,Delivered,4.5,1085.5,601.67,483.83\nMYN00045,,Delhi,New,Kids,Handbags,Accessories,1,996.98,30,299.09,UPI,Delivered,4.8,697.89,482.42,215.47\nMYN00046,,Hyderabad,New,Men,Heels,Footwear,2,1020.34,10,204.07,UPI,Delivered,4.3,1836.61,1195.53,641.08\nMYN00047,,Hyderabad,Returning,Men,Dresses,Women's Western Wear,3,2505.07,0,0,UPI,Delivered,3,7515.21,4180.56,3334.65\nMYN00048,,Hyderabad,Returning,Women,Perfume,Beauty,2,1493.58,20,597.4299999999999,UPI,Delivered,4.3,2389.73,1598.72,791.01\nMYN00049,,Bengaluru,New,Kids,Sunglasses,Accessories,1,391.97,0,0,UPI,Delivered,3.7,391.97,293.67,98.3\nMYN00050,,Ahmedabad,Returning,Men,T-Shirts,Men's Fashion,3,545.91,40,655.09,Net Banking,Delivered,4.7,982.64,622.22,360.42\nMYN00051,,Mumbai,New,Women,Sunglasses,Accessories,1,853.26,30,255.98,Cash on Delivery,Delivered,3.4,597.28,338.01,259.27\nMYN00052,,Mumbai,New,Men,Sandals,Footwear,1,959.84,10,95.98,Credit Card,Delivered,4,863.86,519.75,344.11\nMYN00053,,Delhi,New,Men,T-Shirts,Men's Fashion,1,889.5,30,266.85,UPI,Delivered,4.3,622.65,348.58,274.07\nMYN00054,,Pune,New,Women,T-Shirts,Men's Fashion,1,878.35,10,87.84,UPI,Delivered,3.3,790.51,567.03,223.48\nMYN00055,,Hyderabad,Returning,Women,Jeans,Men's Fashion,1,911.52,20,182.3,UPI,Delivered,4.4,729.22,476.92,252.3\nMYN00056,,Ahmedabad,New,Kids,Kurtis,Indian Wear,1,981.33,20,196.27,Net Banking,Delivered,4.7,785.0599999999999,594.53,190.53\nMYN00057,,Pune,Returning,Men,Kurtis,Indian Wear,1,738.6799999999999,40,295.47,UPI,Delivered,3.4,443.21,281.43,161.78\nMYN00058,,Bengaluru,Returning,Women,Sarees,Indian Wear,3,2018.6,40,2422.32,UPI,Delivered,4.7,3633.48,2489.85,1143.63\nMYN00059,,Kolkata,Returning,Kids,Watches,Accessories,1,1104.35,0,0,UPI,Shipped,3,1104.35,774.0599999999999,330.29\nMYN00060,,Delhi,Returning,Men,Beauty Products,Beauty,1,1606.62,0,0,Debit Card,Delivered,4.5,1606.62,1162.86,443.76\nMYN00061,,Hyderabad,Returning,Men,Sneakers,Footwear,1,1909.24,20,381.85,UPI,Cancelled,3.2,1527.39,895.7,631.6900000000001\nMYN00062,,Delhi,Returning,Kids,Jeans,Men's Fashion,1,2110.52,10,211.05,Cash on Delivery,Delivered,3.3,1899.47,1320.93,578.54\nMYN00063,,Mumbai,Returning,Men,Kids T-Shirts,Kids,2,635.08,30,381.05,Debit Card,Delivered,4.9,889.11,567.87,321.24\nMYN00064,,Kolkata,Returning,Men,Tops,Women's Western Wear,3,1352.98,30,1217.68,UPI,Delivered,3.2,2841.26,1593.88,1247.38\nMYN00065,,Bengaluru,Returning,Men,Sunglasses,Accessories,1,498.52,40,199.41,Cash on Delivery,Delivered,4.3,299.11,221.32,77.79000000000001\nMYN00066,,Delhi,New,Women,Perfume,Beauty,1,3026.75,20,605.35,Debit Card,Delivered,4.8,2421.4,1705.01,716.39\nMYN00067,,Pune,Returning,Women,T-Shirts,Men's Fashion,1,1112.49,40,445,Credit Card,Delivered,4.2,667.49,511.47,156.02\nMYN00068,,Pune,New,Kids,Perfume,Beauty,2,3357.42,0,0,UPI,Delivered,4.3,6714.84,4721.92,1992.92\nMYN00069,,Chennai,Returning,Men,Dresses,Women's Western Wear,2,1149.84,40,919.87,Cash on Delivery,Delivered,3.6,1379.81,883.49,496.32\nMYN00070,,Hyderabad,Returning,Women,Shirts,Men's Fashion,2,1661.41,0,0,UPI,Returned,4.1,3322.82,2396.06,926.76\nMYN00071,,Pune,New,Women,Kurtis,Indian Wear,4,1523.99,10,609.6,Cash on Delivery,Shipped,3.7,5486.36,3672.03,1814.33\nMYN00072,,Delhi,New,Women,Jeans,Men's Fashion,1,1848.38,10,184.84,UPI,Delivered,3.4,1663.54,1134.56,528.98\nMYN00073,,Pune,Returning,Kids,Sports Shoes,Sports,2,4889.46,30,2933.68,Credit Card,Cancelled,5,6845.24,3956.64,2888.6\nMYN00074,,Hyderabad,Returning,Kids,Sunglasses,Accessories,1,965.9,20,193.18,Cash on Delivery,Delivered,4.7,772.72,456.13,316.59\nMYN00075,,Kolkata,Returning,Men,Tops,Women's Western Wear,1,815.01,20,163,Debit Card,Cancelled,3.4,652.01,505.58,146.43\nMYN00076,,Kolkata,Returning,Kids,Dresses,Women's Western Wear,3,1366.85,20,820.11,Debit Card,Delivered,3.6,3280.44,2442.91,837.53\nMYN00077,,Chennai,Returning,Kids,Kurtis,Indian Wear,4,499.44,30,599.33,Credit Card,Returned,4.5,1398.43,883.6900000000001,514.74\nMYN00078,,Pune,Returning,Kids,Kurtas,Indian Wear,2,771.59,10,154.32,Credit Card,Delivered,4.6,1388.86,872.29,516.5700000000001\nMYN00079,,Hyderabad,Returning,Kids,Perfume,Beauty,1,1000.44,30,300.13,Cash on Delivery,Delivered,3.9,700.3099999999999,461.12,239.19\nMYN00080,,Hyderabad,New,Kids,Handbags,Accessories,1,1043.96,40,417.58,Debit Card,Delivered,3.7,626.38,380.46,245.92\nMYN00081,,Bengaluru,New,Men,Kurtis,Indian Wear,3,657.97,10,197.39,Net Banking,Delivered,3.6,1776.52,1285.7,490.82\nMYN00082,,Bengaluru,Returning,Women,Sports T-Shirts,Sports,2,623.74,30,374.24,UPI,Delivered,3.9,873.24,662.8,210.44\nMYN00083,,Ahmedabad,Returning,Women,Sandals,Footwear,1,442.76,40,177.1,Credit Card,Shipped,3.8,265.66,185.01,80.65000000000001\nMYN00084,,Kolkata,Returning,Kids,Sneakers,Footwear,2,4635.7,20,1854.28,Net Banking,Delivered,3.4,7417.12,4158.21,3258.91\nMYN00085,,Mumbai,Returning,Women,Watches,Accessories,1,3537.63,10,353.76,UPI,Cancelled,3.7,3183.87,2022.08,1161.79\nMYN00086,,Hyderabad,New,Men,T-Shirts,Men's Fashion,3,949.17,0,0,Debit Card,Delivered,4.1,2847.51,1681.46,1166.05\nMYN00087,,Hyderabad,Returning,Kids,Watches,Accessories,1,3849.82,20,769.96,Net Banking,Delivered,4.8,3079.86,1941.88,1137.98\nMYN00088,,Ahmedabad,Returning,Men,Shirts,Men's Fashion,2,661.28,40,529.02,UPI,Delivered,3.3,793.54,598.4299999999999,195.11\nMYN00089,,Hyderabad,Returning,Women,Sports Shoes,Sports,2,5538.01,10,1107.6,Credit Card,Delivered,3.2,9968.42,7173.36,2795.06\nMYN00090,,Pune,New,Kids,Jeans,Men's Fashion,1,818.54,20,163.71,Credit Card,Delivered,4.6,654.83,476.2,178.63\nMYN00091,,Ahmedabad,Returning,Women,Sunglasses,Accessories,1,887.27,50,443.64,Net Banking,Delivered,3.7,443.63,264.81,178.82\nMYN00092,,Delhi,Returning,Women,Dresses,Women's Western Wear,1,2512.59,20,502.52,UPI,Returned,4.3,2010.07,1236.98,773.09\nMYN00093,,Kolkata,Returning,Men,Watches,Accessories,4,3452.19,10,1380.88,UPI,Delivered,3.9,12427.88,7020.95,5406.93\nMYN00094,,Delhi,New,Men,Kurtas,Indian Wear,1,1762.81,10,176.28,UPI,Delivered,3.6,1586.53,1112.88,473.65\nMYN00095,,Delhi,New,Men,Kids Dresses,Kids,1,762.5599999999999,10,76.26000000000001,UPI,Cancelled,3.7,686.3,481.46,204.84\nMYN00096,,Bengaluru,New,Women,Beauty Products,Beauty,1,2031.17,10,203.12,Cash on Delivery,Delivered,4.7,1828.05,1176.55,651.5\nMYN00097,,Chennai,New,Women,Sarees,Indian Wear,2,3312.73,30,1987.64,UPI,Shipped,3.2,4637.82,2568.73,2069.09\nMYN00098,,Chennai,Returning,Kids,Sunglasses,Accessories,2,1954.79,0,0,UPI,Delivered,3.8,3909.58,2420.83,1488.75\nMYN00099,,Chennai,Returning,Men,Sports Shoes,Sports,2,4645.12,20,1858.05,Net Banking,Delivered,3,7432.19,5147.14,2285.05\nMYN00100,,Delhi,New,Kids,Sports Shoes,Sports,2,4310.69,30,2586.41,Cash on Delivery,Delivered,4.2,6034.97,4640.78,1394.19\nMYN00101,,Ahmedabad,New,Kids,Kurtis,Indian Wear,1,1372.3,10,137.23,Debit Card,Cancelled,4.7,1235.07,831.13,403.94\nMYN00102,,Hyderabad,New,Kids,Perfume,Beauty,3,931.1799999999999,30,838.0599999999999,Credit Card,Delivered,3.6,1955.48,1482.95,472.53\nMYN00103,,Pune,Returning,Kids,Dresses,Women's Western Wear,1,2011,50,1005.5,UPI,Delivered,3.7,1005.5,709.61,295.89\nMYN00104,,Kolkata,Returning,Kids,Kids T-Shirts,Kids,1,685.75,20,137.15,UPI,Delivered,3.4,548.6,399.77,148.83\nMYN00105,,Bengaluru,New,Women,Handbags,Accessories,1,1583.25,40,633.3,UPI,Delivered,4.9,949.95,733.48,216.47\nMYN00106,,Ahmedabad,Returning,Women,Handbags,Accessories,1,2076.64,20,415.33,UPI,Delivered,4.6,1661.31,969.52,691.79\nMYN00107,,Ahmedabad,New,Kids,Shirts,Men's Fashion,2,831.13,30,498.68,Debit Card,Shipped,3.6,1163.58,820.71,342.87\nMYN00108,,Ahmedabad,New,Men,Kids T-Shirts,Kids,1,685.97,20,137.19,Debit Card,Delivered,4.9,548.78,317.99,230.79\nMYN00109,,Pune,New,Women,Kids T-Shirts,Kids,2,455.34,30,273.2,Debit Card,Delivered,4,637.48,412.19,225.29\nMYN00110,,Mumbai,Returning,Men,Sports Shoes,Sports,1,3208.81,20,641.76,UPI,Delivered,3.7,2567.05,1630.06,936.99\nMYN00111,,Hyderabad,New,Men,Kids T-Shirts,Kids,1,651.96,20,130.39,Credit Card,Cancelled,4.3,521.5700000000001,316.53,205.04\nMYN00112,,Hyderabad,Returning,Women,T-Shirts,Men's Fashion,1,919.16,0,0,Net Banking,Delivered,4.5,919.16,680.4,238.76\nMYN00113,,Ahmedabad,Returning,Men,Sports Shoes,Sports,1,3712.81,20,742.5599999999999,Debit Card,Shipped,4.9,2970.25,1775.22,1195.03\nMYN00114,,Hyderabad,Returning,Men,Beauty Products,Beauty,2,2417.93,40,1934.34,UPI,Returned,3.4,2901.52,1948.34,953.1799999999999\nMYN00115,,Delhi,New,Kids,Beauty Products,Beauty,2,407.99,10,81.59999999999999,Debit Card,Delivered,3.2,734.38,521.92,212.46\nMYN00116,,Pune,New,Kids,Sports Shoes,Sports,1,2222.67,10,222.27,Cash on Delivery,Delivered,3.9,2000.4,1102.76,897.64\nMYN00117,,Chennai,Returning,Men,Sneakers,Footwear,3,4287.75,30,3858.98,UPI,Delivered,4.2,9004.27,6726.2,2278.07\nMYN00118,,Mumbai,Returning,Men,Watches,Accessories,1,4245.94,10,424.59,Credit Card,Delivered,3,3821.35,2764.76,1056.59\nMYN00119,,Bengaluru,Returning,Women,Handbags,Accessories,1,1581.37,10,158.14,UPI,Delivered,4.2,1423.23,818.27,604.96\nMYN00120,,Bengaluru,New,Men,Kids Dresses,Kids,2,1118.47,20,447.39,Debit Card,Delivered,3.3,1789.55,1341.79,447.76\nMYN00121,,Mumbai,Returning,Kids,Heels,Footwear,1,1013.36,0,0,UPI,Delivered,3.7,1013.36,560.5700000000001,452.79\nMYN00122,,Pune,Returning,Kids,Sandals,Footwear,1,835.9,20,167.18,UPI,Delivered,4.8,668.72,434.87,233.85\nMYN00123,,Mumbai,New,Men,Kids Dresses,Kids,1,1231.92,20,246.38,Credit Card,Delivered,4.9,985.54,708.71,276.83\nMYN00124,,Chennai,Returning,Kids,Handbags,Accessories,1,1340.48,20,268.1,UPI,Delivered,3.8,1072.38,647.4,424.98\nMYN00125,,Mumbai,New,Men,Tops,Women's Western Wear,2,622.63,40,498.1,Debit Card,Delivered,4.1,747.16,472.41,274.75\nMYN00126,,Delhi,Returning,Women,Shirts,Men's Fashion,1,1554.9,30,466.47,UPI,Delivered,3.9,1088.43,698.2,390.23\nMYN00127,,Delhi,Returning,Men,Sarees,Indian Wear,2,3493.85,40,2795.08,Net Banking,Delivered,4.1,4192.62,2688.79,1503.83\nMYN00128,,Delhi,New,Women,Sarees,Indian Wear,2,1595.22,30,957.13,UPI,Delivered,3.4,2233.31,1648.26,585.05\nMYN00129,,Delhi,New,Men,Kurtis,Indian Wear,2,1517.92,30,910.75,Cash on Delivery,Delivered,3.8,2125.09,1367.32,757.77\nMYN00130,,Kolkata,New,Kids,Jeans,Men's Fashion,4,1987.31,10,794.92,Debit Card,Delivered,4.4,7154.32,4730.82,2423.5\nMYN00131,,Mumbai,New,Kids,Beauty Products,Beauty,3,2135.84,20,1281.5,UPI,Cancelled,3.7,5126.02,3010.75,2115.27\nMYN00132,,Kolkata,New,Women,Kids T-Shirts,Kids,1,894.08,0,0,UPI,Delivered,4.4,894.08,523.42,370.66\nMYN00133,,Pune,New,Women,Shirts,Men's Fashion,1,1125.09,40,450.04,UPI,Delivered,4.1,675.05,470.85,204.2\nMYN00134,,Bengaluru,New,Women,Sarees,Indian Wear,1,3564.74,10,356.47,Credit Card,Delivered,3.4,3208.27,2323.34,884.9299999999999\nMYN00135,,Kolkata,New,Women,Kids Dresses,Kids,1,1314.38,40,525.75,Debit Card,Delivered,4,788.63,484.59,304.04\nMYN00136,,Delhi,Returning,Kids,Tops,Women's Western Wear,2,597.85,30,358.71,UPI,Cancelled,4.2,836.99,461.55,375.44\nMYN00137,,Kolkata,Returning,Kids,Sneakers,Footwear,1,3465.34,10,346.53,UPI,Delivered,4.5,3118.81,2294.93,823.88\nMYN00138,,Bengaluru,Returning,Kids,Sunglasses,Accessories,3,511.52,50,767.28,UPI,Delivered,4.5,767.28,427.52,339.76\nMYN00139,,Ahmedabad,Returning,Men,Kurtas,Indian Wear,1,1370.46,20,274.09,Net Banking,Delivered,3.2,1096.37,819.45,276.92\nMYN00140,,Hyderabad,New,Women,Kurtis,Indian Wear,1,1789.73,0,0,Net Banking,Delivered,4.7,1789.73,1207.64,582.09\nMYN00141,,Delhi,Returning,Women,Kids Dresses,Kids,1,877.77,10,87.78,Debit Card,Shipped,4.9,789.99,598.23,191.76\nMYN00142,,Mumbai,New,Women,Sneakers,Footwear,1,2289.61,20,457.92,Net Banking,Delivered,3.1,1831.69,1026.83,804.86\nMYN00143,,Pune,New,Women,Perfume,Beauty,1,1069.77,20,213.95,Credit Card,Delivered,4.9,855.8200000000001,656.4400000000001,199.38\nMYN00144,,Pune,Returning,Men,Sneakers,Footwear,2,4118.64,30,2471.18,Debit Card,Delivered,4.8,5766.1,3379.14,2386.96\nMYN00145,,Chennai,Returning,Kids,Dresses,Women's Western Wear,2,1469.76,10,293.95,Cash on Delivery,Delivered,3.8,2645.57,1641.56,1004.01\nMYN00146,,Hyderabad,New,Men,Kurtis,Indian Wear,1,1571.34,30,471.4,Net Banking,Delivered,3.9,1099.94,738.03,361.91\nMYN00147,,Chennai,Returning,Men,Perfume,Beauty,1,2316.45,10,231.64,UPI,Delivered,4,2084.81,1595.48,489.33\nMYN00148,,Bengaluru,Returning,Men,Jeans,Men's Fashion,2,2474.31,0,0,UPI,Delivered,4.5,4948.62,3425.34,1523.28\nMYN00149,,Pune,New,Women,Dresses,Women's Western Wear,2,2711.27,10,542.25,Net Banking,Delivered,3.7,4880.29,3059.52,1820.77\nMYN00150,,Ahmedabad,Returning,Women,Sneakers,Footwear,1,3711.38,0,0,UPI,Delivered,3.6,3711.38,2171.01,1540.37\nMYN00151,,Mumbai,New,Kids,Kurtis,Indian Wear,1,1127.43,30,338.23,UPI,Delivered,4.1,789.2,488.95,300.25\nMYN00152,,Chennai,Returning,Women,Beauty Products,Beauty,1,1841.91,30,552.5700000000001,Credit Card,Delivered,3.4,1289.34,723.23,566.11\nMYN00153,,Ahmedabad,Returning,Men,Sneakers,Footwear,1,3219.22,40,1287.69,UPI,Delivered,4.3,1931.53,1349.38,582.15\nMYN00154,,Bengaluru,Returning,Men,Heels,Footwear,1,1587.46,20,317.49,Debit Card,Returned,3.1,1269.97,806.13,463.84\nMYN00155,,Hyderabad,Returning,Kids,Perfume,Beauty,1,3554.66,40,1421.86,Credit Card,Delivered,4,2132.8,1636.31,496.49\nMYN00156,,Delhi,Returning,Men,Heels,Footwear,1,788.61,0,0,Debit Card,Delivered,3.6,788.61,525.5,263.11\nMYN00157,,Bengaluru,New,Women,Shirts,Men's Fashion,3,1865.87,20,1119.52,UPI,Shipped,4.2,4478.09,2692.6,1785.49\nMYN00158,,Bengaluru,New,Men,Sandals,Footwear,2,863.1799999999999,10,172.64,UPI,Delivered,3.1,1553.72,937.17,616.55\nMYN00159,,Ahmedabad,Returning,Men,Sandals,Footwear,1,1170.78,40,468.31,UPI,Delivered,4.9,702.47,460.84,241.63\nMYN00160,,Bengaluru,Returning,Men,Kurtis,Indian Wear,3,1390.31,10,417.09,Debit Card,Delivered,4.1,3753.84,2762.21,991.63\nMYN00161,,Chennai,Returning,Kids,Dresses,Women's Western Wear,2,2485.16,40,1988.13,Debit Card,Delivered,4.1,2982.19,2043.98,938.21\nMYN00162,,Delhi,New,Men,Kurtis,Indian Wear,1,955.9,0,0,Credit Card,Delivered,4.2,955.9,740.38,215.52\nMYN00163,,Delhi,Returning,Men,Sports Shoes,Sports,2,4341.95,30,2605.17,Net Banking,Delivered,4.8,6078.73,4114.63,1964.1\nMYN00164,,Ahmedabad,New,Kids,Kids T-Shirts,Kids,2,846.21,50,846.21,UPI,Delivered,5,846.21,583.96,262.25\nMYN00165,,Hyderabad,Returning,Men,Kurtas,Indian Wear,1,574.4,10,57.44,Debit Card,Shipped,3.8,516.96,291.47,225.49\nMYN00166,,Chennai,New,Men,Jeans,Men's Fashion,1,2283.68,50,1141.84,UPI,Delivered,3.8,1141.84,796.66,345.18\nMYN00167,,Ahmedabad,Returning,Men,Sandals,Footwear,2,1189.3,10,237.86,Debit Card,Delivered,4.6,2140.74,1612.1,528.64\nMYN00168,,Bengaluru,Returning,Women,Sneakers,Footwear,2,3852.09,20,1540.84,UPI,Delivered,4.2,6163.34,3768.08,2395.26\nMYN00169,,Chennai,New,Women,Sandals,Footwear,4,1129.73,30,1355.68,UPI,Delivered,3.8,3163.24,2003.93,1159.31\nMYN00170,,Hyderabad,Returning,Men,Sports Shoes,Sports,1,5722.98,30,1716.89,Cash on Delivery,Returned,4.1,4006.09,3109.11,896.98\nMYN00171,,Chennai,New,Kids,Sarees,Indian Wear,1,3529.08,50,1764.54,UPI,Cancelled,4.5,1764.54,1058.33,706.21\nMYN00172,,Bengaluru,New,Women,Jeans,Men's Fashion,1,2404.67,20,480.93,Debit Card,Cancelled,3.4,1923.74,1399.92,523.8200000000001\nMYN00173,,Mumbai,New,Kids,Kurtis,Indian Wear,1,1060.21,30,318.06,UPI,Shipped,3.2,742.15,463.75,278.4\nMYN00174,,Mumbai,Returning,Women,Sports T-Shirts,Sports,1,1792.72,0,0,Debit Card,Delivered,4.8,1792.72,1321.5,471.22\nMYN00175,,Pune,Returning,Women,Shirts,Men's Fashion,2,712.34,0,0,UPI,Shipped,3.6,1424.68,912.6,512.08\nMYN00176,,Bengaluru,Returning,Women,Jeans,Men's Fashion,2,1799.36,20,719.74,Credit Card,Shipped,4.3,2878.98,2226.62,652.36\nMYN00177,,Chennai,New,Kids,Shirts,Men's Fashion,1,1299.59,40,519.84,Cash on Delivery,Delivered,4.7,779.75,459.38,320.37\nMYN00178,,Pune,New,Men,Beauty Products,Beauty,1,580.4299999999999,40,232.17,Debit Card,Delivered,4.8,348.26,193.86,154.4\nMYN00179,,Chennai,New,Kids,Sneakers,Footwear,2,3945.79,40,3156.63,Cash on Delivery,Delivered,4.7,4734.95,2839.81,1895.14\nMYN00180,,Mumbai,New,Kids,Kurtas,Indian Wear,1,1199.98,30,359.99,Debit Card,Shipped,4.4,839.99,501.41,338.58\nMYN00181,,Ahmedabad,Returning,Men,Perfume,Beauty,1,731.27,20,146.25,Credit Card,Delivered,5,585.02,441.16,143.86\nMYN00182,,Delhi,New,Men,Sports Shoes,Sports,1,3388.74,20,677.75,UPI,Delivered,4.4,2710.99,1889,821.99\nMYN00183,,Delhi,New,Women,Beauty Products,Beauty,1,2350.16,40,940.0599999999999,Debit Card,Delivered,3.4,1410.1,1057.09,353.01\nMYN00184,,Kolkata,Returning,Kids,Tops,Women's Western Wear,1,1137.88,30,341.36,Cash on Delivery,Delivered,4.9,796.52,532.53,263.99\nMYN00185,,Pune,Returning,Men,Sandals,Footwear,3,1090.05,20,654.03,UPI,Delivered,4.2,2616.12,1497.11,1119.01\nMYN00186,,Bengaluru,New,Men,Beauty Products,Beauty,1,1313.39,10,131.34,UPI,Delivered,4.7,1182.05,784.49,397.56\nMYN00187,,Mumbai,New,Kids,Kurtis,Indian Wear,2,1398.97,10,279.79,Credit Card,Delivered,4.2,2518.15,1916.61,601.54\nMYN00188,,Ahmedabad,New,Women,Handbags,Accessories,2,1346.06,30,807.64,UPI,Delivered,4.5,1884.48,1340.75,543.73\nMYN00189,,Ahmedabad,Returning,Women,Sunglasses,Accessories,1,1529.05,0,0,Credit Card,Delivered,3.5,1529.05,902.39,626.66\nMYN00190,,Kolkata,Returning,Men,Tops,Women's Western Wear,3,763.41,30,687.0700000000001,UPI,Delivered,3.5,1603.16,935.17,667.99\nMYN00191,,Ahmedabad,New,Women,Tops,Women's Western Wear,2,1113.98,10,222.8,Net Banking,Delivered,4.4,2005.16,1218.07,787.09\nMYN00192,,Pune,New,Women,Kids Dresses,Kids,1,587.36,40,234.94,Net Banking,Delivered,3.2,352.42,231.35,121.07\nMYN00193,,Kolkata,Returning,Women,Kids T-Shirts,Kids,1,338.68,40,135.47,UPI,Delivered,4.9,203.21,129.25,73.95999999999999\nMYN00194,,Ahmedabad,New,Women,T-Shirts,Men's Fashion,3,1183.09,30,1064.78,Credit Card,Delivered,4.6,2484.49,1897.09,587.4\nMYN00195,,Ahmedabad,Returning,Men,Sandals,Footwear,1,625.23,30,187.57,Net Banking,Delivered,3.2,437.66,331.07,106.59\nMYN00196,,Ahmedabad,Returning,Women,Jeans,Men's Fashion,1,1805.45,20,361.09,Debit Card,Delivered,3.3,1444.36,904.26,540.1\nMYN00197,,Bengaluru,Returning,Women,T-Shirts,Men's Fashion,1,1114.49,20,222.9,Net Banking,Delivered,3.6,891.59,592.65,298.94\nMYN00198,,Mumbai,New,Women,Dresses,Women's Western Wear,1,1160.24,10,116.02,UPI,Delivered,3.2,1044.22,718.5700000000001,325.65\nMYN00199,,Mumbai,Returning,Women,Kids Dresses,Kids,1,668.29,30,200.49,UPI,Shipped,4,467.8,274.59,193.21\nMYN00200,,Mumbai,Returning,Kids,Sunglasses,Accessories,1,744.08,40,297.63,Credit Card,Delivered,4.9,446.45,307.16,139.29\nMYN00201,,Delhi,Returning,Kids,Tops,Women's Western Wear,1,504.42,40,201.77,Cash on Delivery,Delivered,3.3,302.65,221.08,81.56999999999999\nMYN00202,,Kolkata,New,Men,Sports T-Shirts,Sports,2,922.52,30,553.51,Credit Card,Delivered,3.3,1291.53,724.6900000000001,566.84\nMYN00203,,Delhi,Returning,Kids,Dresses,Women's Western Wear,1,2432.73,20,486.55,Credit Card,Delivered,4.4,1946.18,1481.08,465.1\nMYN00204,,Ahmedabad,Returning,Kids,Kids T-Shirts,Kids,1,692.27,30,207.68,Cash on Delivery,Delivered,3.3,484.59,279.91,204.68\nMYN00205,,Chennai,New,Men,Kids Dresses,Kids,1,614.99,20,123,Cash on Delivery,Delivered,3.7,491.99,336.79,155.2\nMYN00206,,Pune,Returning,Women,Beauty Products,Beauty,1,2258.83,10,225.88,UPI,Delivered,4.8,2032.95,1204.45,828.5\nMYN00207,,Delhi,Returning,Men,Sports T-Shirts,Sports,2,802.3099999999999,30,481.39,Debit Card,Delivered,4.3,1123.23,788.73,334.5\nMYN00208,,Bengaluru,Returning,Kids,Kurtas,Indian Wear,1,977.54,30,293.26,Credit Card,Delivered,4.5,684.28,399.4,284.88\nMYN00209,,Mumbai,Returning,Men,Sneakers,Footwear,1,3207.77,40,1283.11,Credit Card,Delivered,4,1924.66,1484.12,440.54\nMYN00210,,Delhi,Returning,Men,Kids Dresses,Kids,1,1034.89,20,206.98,UPI,Delivered,4.8,827.91,507.35,320.56\nMYN00211,,Ahmedabad,Returning,Kids,Jeans,Men's Fashion,1,1291.41,20,258.28,UPI,Delivered,4.6,1033.13,616.6,416.53\nMYN00212,,Chennai,New,Men,Kurtis,Indian Wear,2,568.48,10,113.7,Credit Card,Delivered,3.2,1023.26,582.3200000000001,440.94\nMYN00213,,Delhi,New,Men,Kids T-Shirts,Kids,1,568.58,40,227.43,UPI,Delivered,4.7,341.15,200.69,140.46\nMYN00214,,Bengaluru,Returning,Women,Kids T-Shirts,Kids,1,936.79,20,187.36,Net Banking,Returned,3.8,749.4299999999999,437.16,312.27\nMYN00215,,Mumbai,Returning,Men,T-Shirts,Men's Fashion,1,575.99,40,230.4,UPI,Delivered,4.8,345.59,221.91,123.68\nMYN00216,,Delhi,New,Women,Handbags,Accessories,1,809.63,30,242.89,Credit Card,Delivered,4.4,566.74,417.42,149.32\nMYN00217,,Kolkata,Returning,Men,Sports Shoes,Sports,1,1852.79,30,555.84,Cash on Delivery,Delivered,3.3,1296.95,808.14,488.81\nMYN00218,,Hyderabad,Returning,Women,Sandals,Footwear,1,1033.75,10,103.38,UPI,Delivered,4,930.37,629.5,300.87\nMYN00219,,Ahmedabad,New,Men,Jeans,Men's Fashion,1,1958.22,30,587.47,Credit Card,Shipped,3.1,1370.75,909.98,460.77\nMYN00220,,Ahmedabad,New,Men,Sports Shoes,Sports,1,4511.18,40,1804.47,UPI,Delivered,4,2706.71,1555.37,1151.34\nMYN00221,,Bengaluru,Returning,Kids,Beauty Products,Beauty,2,2027.21,10,405.44,UPI,Delivered,3.7,3648.98,2293.26,1355.72\nMYN00222,,Delhi,Returning,Men,Sports T-Shirts,Sports,1,1597.41,40,638.96,Cash on Delivery,Delivered,3,958.45,656.8,301.65\nMYN00223,,Hyderabad,Returning,Women,Tops,Women's Western Wear,1,596.59,20,119.32,Net Banking,Cancelled,3.4,477.27,371.6,105.67\nMYN00224,,Ahmedabad,New,Men,Sports T-Shirts,Sports,1,1572.35,30,471.7,UPI,Delivered,3.9,1100.65,679.03,421.62\nMYN00225,,Chennai,Returning,Kids,Dresses,Women's Western Wear,1,1648.41,40,659.36,UPI,Shipped,4.4,989.05,710.6900000000001,278.36\nMYN00226,,Ahmedabad,New,Men,Sports Shoes,Sports,2,4676.51,0,0,UPI,Delivered,4.6,9353.02,7110.8,2242.22\nMYN00227,,Delhi,New,Women,Sneakers,Footwear,1,3309.73,20,661.95,UPI,Delivered,3.2,2647.78,1720.07,927.71\nMYN00228,,Chennai,New,Men,Perfume,Beauty,1,3408.39,0,0,UPI,Delivered,3.3,3408.39,2655.66,752.73\nMYN00229,,Delhi,New,Men,Kurtas,Indian Wear,1,776.25,10,77.62,UPI,Delivered,3.6,698.63,485.32,213.31\nMYN00230,,Kolkata,New,Men,Beauty Products,Beauty,1,2320.74,10,232.07,Net Banking,Delivered,4.4,2088.67,1241.63,847.04\nMYN00231,,Ahmedabad,Returning,Women,Kurtis,Indian Wear,1,1743.81,20,348.76,Credit Card,Delivered,4,1395.05,834.46,560.59\nMYN00232,,Kolkata,New,Men,Sarees,Indian Wear,1,1617.62,20,323.52,UPI,Delivered,4.6,1294.1,770.97,523.13\nMYN00233,,Delhi,New,Women,Sunglasses,Accessories,1,383.43,0,0,UPI,Returned,3.1,383.43,242.68,140.75\nMYN00234,,Bengaluru,New,Men,Jeans,Men's Fashion,1,1043.51,20,208.7,UPI,Delivered,3.9,834.8099999999999,514.54,320.27\nMYN00235,,Pune,New,Men,Kids Dresses,Kids,2,816.71,10,163.34,UPI,Delivered,3.7,1470.08,817.97,652.11\nMYN00236,,Hyderabad,Returning,Women,Sneakers,Footwear,3,1016.35,10,304.9,Debit Card,Delivered,3,2744.15,1710.19,1033.96\nMYN00237,,Bengaluru,Returning,Kids,Sports T-Shirts,Sports,1,1701.64,20,340.33,UPI,Delivered,5,1361.31,809.08,552.23\nMYN00238,,Delhi,Returning,Kids,Sandals,Footwear,1,1131.23,10,113.12,Net Banking,Delivered,3,1018.11,687.14,330.97\nMYN00239,,Hyderabad,Returning,Kids,Sarees,Indian Wear,1,3307.08,0,0,Cash on Delivery,Returned,4.9,3307.08,2454.4,852.6799999999999\nMYN00240,,Bengaluru,Returning,Kids,Sneakers,Footwear,1,2404.1,30,721.23,Debit Card,Delivered,3,1682.87,1163.56,519.3099999999999\nMYN00241,,Hyderabad,New,Kids,Sarees,Indian Wear,1,1435.9,40,574.36,Debit Card,Delivered,4.6,861.54,536.3200000000001,325.22\nMYN00242,,Hyderabad,New,Women,Beauty Products,Beauty,1,2306.77,30,692.03,Net Banking,Delivered,4.6,1614.74,1058.7,556.04\nMYN00243,,Mumbai,Returning,Men,T-Shirts,Men's Fashion,3,1014.14,10,304.24,Cash on Delivery,Delivered,4.9,2738.18,1553.08,1185.1\nMYN00244,,Ahmedabad,Returning,Kids,Tops,Women's Western Wear,1,1390.98,30,417.29,Credit Card,Delivered,3.9,973.6900000000001,594.33,379.36\nMYN00245,,Pune,New,Men,Sports Shoes,Sports,1,3822.63,10,382.26,Cash on Delivery,Delivered,4.2,3440.37,2225.71,1214.66\nMYN00246,,Chennai,New,Men,Sarees,Indian Wear,1,2947.09,40,1178.84,UPI,Cancelled,3.2,1768.25,1357.03,411.22\nMYN00247,,Chennai,New,Men,Kurtas,Indian Wear,1,514.86,50,257.43,Net Banking,Delivered,3.6,257.43,164.52,92.91\nMYN00248,,Bengaluru,Returning,Men,Dresses,Women's Western Wear,1,791.22,40,316.49,UPI,Delivered,3.3,474.73,293.18,181.55\nMYN00249,,Delhi,Returning,Men,Sports T-Shirts,Sports,1,1289.35,30,386.8,UPI,Delivered,4.5,902.55,681.04,221.51\nMYN00250,,Chennai,Returning,Kids,Kurtas,Indian Wear,1,1688.78,30,506.63,Net Banking,Delivered,3,1182.15,727.08,455.07\nMYN00251,,Mumbai,New,Men,Jeans,Men's Fashion,2,2090,20,836,Cash on Delivery,Delivered,3.9,3344,2135.19,1208.81\nMYN00252,,Hyderabad,Returning,Kids,Sunglasses,Accessories,1,1318.38,30,395.51,Credit Card,Delivered,3.3,922.87,527.38,395.49\nMYN00253,,Hyderabad,New,Men,Sports T-Shirts,Sports,1,1265.27,40,506.11,Net Banking,Delivered,4,759.16,550.14,209.02\nMYN00254,,Chennai,New,Kids,Sneakers,Footwear,2,1545.26,0,0,UPI,Delivered,4.2,3090.52,1733.03,1357.49\nMYN00255,,Delhi,New,Men,Handbags,Accessories,1,1218.96,40,487.58,Debit Card,Shipped,4.7,731.38,422.56,308.82\nMYN00256,,Mumbai,New,Women,Kurtas,Indian Wear,1,1453.44,30,436.03,Net Banking,Delivered,4.9,1017.41,571.46,445.95\nMYN00257,,Pune,New,Women,Kurtas,Indian Wear,1,671.46,10,67.15000000000001,UPI,Delivered,3.2,604.3099999999999,401.52,202.79\nMYN00258,,Kolkata,New,Kids,Tops,Women's Western Wear,1,856.21,20,171.24,Credit Card,Delivered,4.5,684.97,503.44,181.53\nMYN00259,,Ahmedabad,Returning,Men,Kurtas,Indian Wear,2,1332.47,20,532.99,Credit Card,Delivered,3.7,2131.95,1590.96,540.99\nMYN00260,,Ahmedabad,Returning,Men,Perfume,Beauty,1,2537.13,40,1014.85,Credit Card,Delivered,3.1,1522.28,1104.51,417.77\nMYN00261,,Mumbai,Returning,Kids,Sneakers,Footwear,2,3606.28,40,2885.02,UPI,Delivered,5,4327.54,3297.15,1030.39\nMYN00262,,Pune,New,Kids,Shirts,Men's Fashion,3,1783.06,30,1604.75,Debit Card,Delivered,4.9,3744.43,2232.16,1512.27\nMYN00263,,Delhi,Returning,Kids,Shirts,Men's Fashion,1,975.05,0,0,Debit Card,Delivered,4.7,975.05,545.91,429.14\nMYN00264,,Bengaluru,Returning,Men,Kurtas,Indian Wear,1,1152.79,10,115.28,UPI,Returned,3.9,1037.51,721.65,315.86\nMYN00265,,Bengaluru,Returning,Men,Kids T-Shirts,Kids,2,412.89,10,82.58,Cash on Delivery,Delivered,4.1,743.2,528.95,214.25\nMYN00266,,Pune,Returning,Kids,Jeans,Men's Fashion,1,1287.1,20,257.42,UPI,Delivered,4,1029.68,575.97,453.71\nMYN00267,,Kolkata,New,Women,Beauty Products,Beauty,1,1140.11,10,114.01,UPI,Returned,4.3,1026.1,749.3200000000001,276.78\nMYN00268,,Ahmedabad,Returning,Kids,Kurtis,Indian Wear,1,1980.94,10,198.09,Debit Card,Delivered,4.4,1782.85,1372.46,410.39\nMYN00269,,Hyderabad,Returning,Women,Jeans,Men's Fashion,1,956.14,20,191.23,Credit Card,Delivered,3.7,764.91,438.89,326.02\nMYN00270,,Ahmedabad,New,Kids,Kids T-Shirts,Kids,1,561.71,30,168.51,UPI,Delivered,3.2,393.2,225.2,168\nMYN00271,,Kolkata,Returning,Women,Sandals,Footwear,1,498.97,30,149.69,Debit Card,Shipped,3.1,349.28,235.22,114.06\nMYN00272,,Ahmedabad,Returning,Kids,Kurtis,Indian Wear,1,1170.01,30,351,Credit Card,Delivered,4,819.01,488.29,330.72\nMYN00273,,Ahmedabad,New,Men,Dresses,Women's Western Wear,2,1338.21,20,535.28,Credit Card,Shipped,3.4,2141.14,1191.31,949.83\nMYN00274,,Ahmedabad,New,Women,Perfume,Beauty,1,1445.45,10,144.54,UPI,Returned,3.5,1300.91,916.46,384.45\nMYN00275,,Kolkata,Returning,Kids,Tops,Women's Western Wear,1,759.26,20,151.85,UPI,Delivered,4,607.41,422.85,184.56\nMYN00276,,Bengaluru,New,Men,Sneakers,Footwear,3,3871.36,30,3484.22,Credit Card,Delivered,3.1,8129.86,6189.25,1940.61\nMYN00277,,Pune,New,Kids,Sarees,Indian Wear,4,3083.36,30,3700.03,Net Banking,Delivered,4,8633.41,5296.79,3336.62\nMYN00278,,Ahmedabad,New,Men,Kurtis,Indian Wear,3,1702.56,20,1021.54,UPI,Delivered,4.4,4086.14,3136.65,949.49\nMYN00279,,Ahmedabad,New,Kids,Sports Shoes,Sports,2,4990.22,0,0,UPI,Cancelled,4.4,9980.440000000001,5526.63,4453.81\nMYN00280,,Kolkata,Returning,Kids,Sports Shoes,Sports,1,1347.86,20,269.57,Debit Card,Delivered,3.1,1078.29,775.95,302.34\nMYN00281,,Pune,New,Women,Beauty Products,Beauty,1,901.2,10,90.12,UPI,Shipped,4.4,811.08,528.39,282.69\nMYN00282,,Kolkata,New,Kids,Sarees,Indian Wear,3,1233.66,20,740.2,UPI,Delivered,3.8,2960.78,2162.37,798.41\nMYN00283,,Bengaluru,Returning,Men,Tops,Women's Western Wear,2,824.13,10,164.83,UPI,Delivered,3,1483.43,1097.31,386.12\nMYN00284,,Pune,New,Men,Heels,Footwear,2,902.98,40,722.38,Debit Card,Returned,4.7,1083.58,735.9,347.68\nMYN00285,,Mumbai,Returning,Women,Kids Dresses,Kids,1,486.15,40,194.46,UPI,Delivered,3.6,291.69,187.4,104.29\nMYN00286,,Mumbai,New,Men,Watches,Accessories,2,1444.7,20,577.88,UPI,Delivered,3,2311.52,1727.22,584.3\nMYN00287,,Ahmedabad,Returning,Kids,Tops,Women's Western Wear,1,1087.67,30,326.3,Net Banking,Delivered,4.2,761.37,512.24,249.13\nMYN00288,,Delhi,Returning,Kids,Perfume,Beauty,2,3028.54,0,0,UPI,Delivered,3,6057.08,4131.5,1925.58\nMYN00289,,Bengaluru,New,Women,Jeans,Men's Fashion,1,2452.51,40,981,UPI,Delivered,3.2,1471.51,881.4299999999999,590.08\nMYN00290,,Hyderabad,New,Women,Jeans,Men's Fashion,1,884.76,30,265.43,Debit Card,Returned,4.4,619.33,409.25,210.08\nMYN00291,,Pune,Returning,Men,Sarees,Indian Wear,1,3778.97,10,377.9,Cash on Delivery,Delivered,3.5,3401.07,1974.41,1426.66\nMYN00292,,Chennai,Returning,Kids,Kurtis,Indian Wear,1,505.15,20,101.03,UPI,Delivered,4.7,404.12,225.85,178.27\nMYN00293,,Chennai,New,Women,Sandals,Footwear,1,1615.04,20,323.01,UPI,Delivered,3.4,1292.03,951.65,340.38\nMYN00294,,Hyderabad,Returning,Kids,Tops,Women's Western Wear,1,575.88,20,115.18,UPI,Returned,4.9,460.7,327.81,132.89\nMYN00295,,Mumbai,Returning,Kids,Sarees,Indian Wear,1,3759.35,30,1127.8,Credit Card,Delivered,3.5,2631.55,1975.64,655.91\nMYN00296,,Ahmedabad,New,Men,Perfume,Beauty,1,3084.19,50,1542.1,Credit Card,Delivered,5,1542.09,1114.16,427.93\nMYN00297,,Ahmedabad,New,Kids,Beauty Products,Beauty,1,2043.83,30,613.15,UPI,Delivered,3.1,1430.68,798.98,631.7\nMYN00298,,Chennai,New,Kids,Tops,Women's Western Wear,1,531.17,20,106.23,UPI,Delivered,4.2,424.94,312.58,112.36\nMYN00299,,Hyderabad,Returning,Kids,Watches,Accessories,1,2549.38,30,764.8099999999999,Cash on Delivery,Delivered,4.4,1784.57,1014.63,769.9400000000001\nMYN00300,,Chennai,Returning,Kids,Kurtis,Indian Wear,1,1421.92,50,710.96,UPI,Delivered,3.3,710.96,446.67,264.29\nMYN00301,,Pune,Returning,Women,Sports Shoes,Sports,1,3571.53,20,714.3099999999999,Credit Card,Delivered,4.9,2857.22,1619.8,1237.42\nMYN00302,,Delhi,Returning,Men,Dresses,Women's Western Wear,3,1436.45,30,1292.8,UPI,Delivered,4.1,3016.55,2027.3,989.25\nMYN00303,,Pune,New,Kids,Sandals,Footwear,1,1072.08,20,214.42,Debit Card,Delivered,3.6,857.66,632.78,224.88\nMYN00304,,Kolkata,Returning,Men,Sports Shoes,Sports,1,2475.39,30,742.62,Credit Card,Delivered,4.6,1732.77,1075.19,657.58\nMYN00305,,Bengaluru,Returning,Men,Beauty Products,Beauty,2,2278.32,20,911.33,Debit Card,Cancelled,4.1,3645.31,2306.91,1338.4\nMYN00306,,Kolkata,New,Men,Watches,Accessories,1,2860.55,30,858.16,Cash on Delivery,Delivered,4,2002.39,1483.92,518.47\nMYN00307,,Hyderabad,New,Kids,Dresses,Women's Western Wear,1,1789.63,0,0,UPI,Returned,4.5,1789.63,1240.74,548.89\nMYN00308,,Pune,Returning,Men,Watches,Accessories,3,3282.63,40,3939.16,Credit Card,Cancelled,4.6,5908.73,3885.98,2022.75\nMYN00309,,Delhi,New,Women,Jeans,Men's Fashion,1,2367.7,0,0,UPI,Delivered,3.8,2367.7,1588.59,779.11\nMYN00310,,Pune,Returning,Kids,Kids Dresses,Kids,1,1299.07,0,0,UPI,Delivered,4.8,1299.07,871.05,428.02\nMYN00311,,Hyderabad,New,Kids,Shirts,Men's Fashion,1,1715.86,20,343.17,Credit Card,Delivered,4.9,1372.69,797.1900000000001,575.5\nMYN00312,,Ahmedabad,Returning,Men,Kurtis,Indian Wear,2,935.1900000000001,10,187.04,Cash on Delivery,Delivered,4.6,1683.34,1053.02,630.3200000000001\nMYN00313,,Hyderabad,New,Kids,Sports T-Shirts,Sports,2,1764.5,10,352.9,UPI,Delivered,3.1,3176.1,2461.87,714.23\nMYN00314,,Pune,Returning,Men,Watches,Accessories,1,3441.81,30,1032.54,UPI,Cancelled,3.5,2409.27,1826.19,583.08\nMYN00315,,Kolkata,New,Kids,T-Shirts,Men's Fashion,1,1216.46,10,121.65,UPI,Delivered,4.6,1094.81,693.95,400.86\nMYN00316,,Pune,Returning,Women,Kids Dresses,Kids,1,1337.19,30,401.16,UPI,Delivered,3.3,936.03,693.45,242.58\nMYN00317,,Mumbai,New,Women,Heels,Footwear,1,1312.8,20,262.56,Credit Card,Delivered,4.7,1050.24,819.05,231.19\nMYN00318,,Pune,Returning,Men,Sneakers,Footwear,1,4987.05,10,498.7,UPI,Shipped,4.6,4488.35,3376.93,1111.42\nMYN00319,,Chennai,New,Kids,Perfume,Beauty,1,3732.59,20,746.52,Credit Card,Delivered,4.7,2986.07,1931.82,1054.25\nMYN00320,,Ahmedabad,Returning,Women,Sneakers,Footwear,2,4357.1,30,2614.26,UPI,Delivered,4.1,6099.94,3754.71,2345.23\nMYN00321,,Kolkata,New,Kids,Sandals,Footwear,1,1740.71,40,696.28,Net Banking,Delivered,3.3,1044.43,585.75,458.68\nMYN00322,,Kolkata,Returning,Kids,Tops,Women's Western Wear,1,1087.33,10,108.73,UPI,Delivered,4.8,978.6,682.62,295.98\nMYN00323,,Mumbai,Returning,Kids,Kids Dresses,Kids,1,1431.19,40,572.48,UPI,Cancelled,3.6,858.71,485.58,373.13\nMYN00324,,Pune,Returning,Men,Kids T-Shirts,Kids,1,695.5599999999999,0,0,Credit Card,Cancelled,3.1,695.5599999999999,462.68,232.88\nMYN00325,,Kolkata,New,Women,Sports T-Shirts,Sports,2,716.23,30,429.74,Cash on Delivery,Delivered,4.2,1002.72,622.5599999999999,380.16\nMYN00326,,Chennai,New,Men,Sneakers,Footwear,1,3611.68,10,361.17,Debit Card,Delivered,3.4,3250.51,1946.01,1304.5\nMYN00327,,Delhi,Returning,Women,Tops,Women's Western Wear,1,1361.68,30,408.5,UPI,Returned,4.4,953.1799999999999,717.46,235.72\nMYN00328,,Hyderabad,Returning,Kids,Beauty Products,Beauty,3,2489.54,10,746.86,Credit Card,Delivered,3.7,6721.76,5176.27,1545.49\nMYN00329,,Chennai,New,Women,Dresses,Women's Western Wear,1,2366.52,0,0,Credit Card,Delivered,3.6,2366.52,1534.66,831.86\nMYN00330,,Mumbai,New,Kids,Sarees,Indian Wear,1,1249.45,30,374.84,Cash on Delivery,Returned,5,874.61,664.27,210.34\nMYN00331,,Mumbai,Returning,Men,Perfume,Beauty,3,3934.55,30,3541.1,UPI,Cancelled,4.9,8262.549999999999,5640.11,2622.44\nMYN00332,,Ahmedabad,New,Men,Watches,Accessories,2,2227.4,10,445.48,Cash on Delivery,Returned,3.5,4009.32,2499.27,1510.05\nMYN00333,,Kolkata,Returning,Kids,Beauty Products,Beauty,2,1446.63,10,289.33,Debit Card,Delivered,4.3,2603.93,1590.03,1013.9\nMYN00334,,Pune,New,Men,Kurtis,Indian Wear,2,1837.93,30,1102.76,UPI,Delivered,4.5,2573.1,1930.9,642.2\nMYN00335,,Chennai,New,Women,Beauty Products,Beauty,2,1892.05,30,1135.23,Cash on Delivery,Shipped,4.7,2648.87,1918.4,730.47\nMYN00336,,Kolkata,New,Men,Watches,Accessories,1,2338.85,20,467.77,Cash on Delivery,Delivered,4.6,1871.08,1426.42,444.66\nMYN00337,,Hyderabad,New,Men,Shirts,Men's Fashion,1,1703.73,50,851.86,UPI,Delivered,4.3,851.87,546.12,305.75\nMYN00338,,Ahmedabad,Returning,Kids,Shirts,Men's Fashion,1,1601.43,0,0,Credit Card,Delivered,4.3,1601.43,984.89,616.54\nMYN00339,,Delhi,New,Men,Handbags,Accessories,1,2439.42,10,243.94,UPI,Delivered,4.6,2195.48,1530.84,664.64\nMYN00340,,Bengaluru,New,Kids,Tops,Women's Western Wear,1,514.96,40,205.98,Credit Card,Delivered,3.6,308.98,215.08,93.90000000000001\nMYN00341,,Bengaluru,New,Women,Sneakers,Footwear,1,1351.41,10,135.14,UPI,Delivered,4.8,1216.27,861.53,354.74\nMYN00342,,Chennai,Returning,Kids,Dresses,Women's Western Wear,1,890.85,30,267.26,UPI,Delivered,3.2,623.59,352.09,271.5\nMYN00343,,Kolkata,New,Men,Sunglasses,Accessories,1,1049.14,30,314.74,Credit Card,Delivered,5,734.4,443.91,290.49\nMYN00344,,Pune,Returning,Kids,Shirts,Men's Fashion,2,1286.6,30,771.96,Net Banking,Returned,3.8,1801.24,1366.02,435.22\nMYN00345,,Mumbai,Returning,Women,Beauty Products,Beauty,1,899.02,20,179.8,Credit Card,Delivered,3.3,719.22,552.52,166.7\nMYN00346,,Bengaluru,New,Kids,Sunglasses,Accessories,1,1557.72,10,155.77,Cash on Delivery,Delivered,3.5,1401.95,906.86,495.09\nMYN00347,,Bengaluru,New,Women,Heels,Footwear,1,776.04,40,310.42,UPI,Cancelled,4.4,465.62,306.3,159.32\nMYN00348,,Hyderabad,Returning,Women,Tops,Women's Western Wear,1,1296.27,10,129.63,UPI,Delivered,3.7,1166.64,863.24,303.4\nMYN00349,,Kolkata,New,Kids,Jeans,Men's Fashion,1,1926.56,30,577.97,UPI,Delivered,3.4,1348.59,753.85,594.74\nMYN00350,,Mumbai,Returning,Men,Jeans,Men's Fashion,1,1343.34,20,268.67,UPI,Delivered,4.3,1074.67,698.01,376.66\nMYN00351,,Delhi,New,Women,Dresses,Women's Western Wear,1,1149.96,20,229.99,UPI,Delivered,4.1,919.97,700.04,219.93\nMYN00352,,Hyderabad,New,Women,Perfume,Beauty,2,2131.3,20,852.52,Cash on Delivery,Delivered,4,3410.08,2308.23,1101.85\nMYN00353,,Mumbai,New,Women,Kurtis,Indian Wear,1,1067.99,20,213.6,Credit Card,Delivered,4.1,854.39,557.41,296.98\nMYN00354,,Delhi,New,Women,Dresses,Women's Western Wear,1,1434,30,430.2,UPI,Shipped,3.1,1003.8,595.41,408.39\nMYN00355,,Hyderabad,Returning,Men,Beauty Products,Beauty,2,453.41,30,272.05,Credit Card,Delivered,3.5,634.77,383.12,251.65\nMYN00356,,Mumbai,New,Women,Jeans,Men's Fashion,1,1338.17,30,401.45,Net Banking,Delivered,3.6,936.72,658.67,278.05\nMYN00357,,Delhi,New,Women,Dresses,Women's Western Wear,1,1876.95,20,375.39,Debit Card,Delivered,3.3,1501.56,1131.92,369.64\nMYN00358,,Kolkata,Returning,Kids,T-Shirts,Men's Fashion,1,980.95,30,294.29,Net Banking,Returned,5,686.66,448.21,238.45\nMYN00359,,Mumbai,New,Kids,Sarees,Indian Wear,3,2904.85,50,4357.27,UPI,Delivered,3.2,4357.28,2690.44,1666.84\nMYN00360,,Delhi,Returning,Kids,Heels,Footwear,1,2794.68,30,838.4,Net Banking,Shipped,3.4,1956.28,1114.11,842.17\nMYN00361,,Bengaluru,New,Kids,Sarees,Indian Wear,1,3465.92,20,693.1799999999999,Cash on Delivery,Shipped,3.1,2772.74,1886.37,886.37\nMYN00362,,Bengaluru,Returning,Kids,Sandals,Footwear,1,857.9,40,343.16,Credit Card,Delivered,3.1,514.74,395.14,119.6\nMYN00363,,Bengaluru,Returning,Kids,Kurtis,Indian Wear,2,858.3099999999999,20,343.32,Credit Card,Delivered,4.6,1373.3,783.04,590.26\nMYN00364,,Hyderabad,New,Men,Sports T-Shirts,Sports,1,1964.15,20,392.83,UPI,Delivered,3.7,1571.32,1188.04,383.28\nMYN00365,,Kolkata,Returning,Kids,Sunglasses,Accessories,1,1499.68,30,449.9,Net Banking,Delivered,4.4,1049.78,786.02,263.76\nMYN00366,,Chennai,New,Kids,Heels,Footwear,1,1425.57,30,427.67,UPI,Delivered,4,997.9,558.51,439.39\nMYN00367,,Bengaluru,New,Women,T-Shirts,Men's Fashion,2,923.16,20,369.26,Net Banking,Delivered,4.7,1477.06,819.66,657.4\nMYN00368,,Chennai,Returning,Women,Perfume,Beauty,1,3464.61,30,1039.38,Credit Card,Shipped,3.2,2425.23,1872.8,552.4299999999999\nMYN00369,,Delhi,Returning,Kids,Kids Dresses,Kids,1,1403.12,0,0,Debit Card,Shipped,3.1,1403.12,833.65,569.47\nMYN00370,,Delhi,Returning,Kids,Sports Shoes,Sports,4,1783.67,0,0,Cash on Delivery,Delivered,4,7134.68,5506.32,1628.36\nMYN00371,,Chennai,New,Men,Sarees,Indian Wear,1,1496.34,10,149.63,Credit Card,Delivered,4.4,1346.71,797.09,549.62\nMYN00372,,Chennai,Returning,Women,Kurtis,Indian Wear,1,1255,10,125.5,UPI,Shipped,4.4,1129.5,864.27,265.23\nMYN00373,,Delhi,Returning,Kids,Shirts,Men's Fashion,1,908.77,20,181.75,UPI,Delivered,4.4,727.02,554.6,172.42\nMYN00374,,Pune,New,Kids,Sneakers,Footwear,1,4879.76,0,0,UPI,Delivered,4.1,4879.76,2726.03,2153.73\nMYN00375,,Kolkata,Returning,Kids,Handbags,Accessories,1,2182.74,40,873.1,Cash on Delivery,Delivered,3.8,1309.64,755.85,553.79\nMYN00376,,Chennai,New,Women,Sarees,Indian Wear,1,3739.77,20,747.95,UPI,Cancelled,4.2,2991.82,1829.63,1162.19\nMYN00377,,Delhi,New,Women,Dresses,Women's Western Wear,2,2173.54,30,1304.12,Cash on Delivery,Delivered,3.7,3042.96,2041.34,1001.62\nMYN00378,,Bengaluru,New,Men,Kids Dresses,Kids,1,1206.14,10,120.61,UPI,Delivered,3.6,1085.53,669.42,416.11\nMYN00379,,Ahmedabad,Returning,Men,Perfume,Beauty,2,3827.49,50,3827.49,UPI,Delivered,3.7,3827.49,2562.34,1265.15\nMYN00380,,Pune,New,Men,Sports Shoes,Sports,1,5905.14,20,1181.03,UPI,Delivered,4,4724.11,3551.33,1172.78\nMYN00381,,Kolkata,Returning,Women,Sports T-Shirts,Sports,2,1631.42,40,1305.14,Cash on Delivery,Delivered,4.7,1957.7,1260.41,697.29\nMYN00382,,Kolkata,Returning,Men,Jeans,Men's Fashion,2,1543.33,30,926,UPI,Delivered,3.5,2160.66,1602.72,557.9400000000001\nMYN00383,,Kolkata,New,Women,Jeans,Men's Fashion,1,1284.79,20,256.96,UPI,Delivered,3.6,1027.83,686.47,341.36\nMYN00384,,Mumbai,New,Men,Kurtis,Indian Wear,1,614.05,0,0,Debit Card,Delivered,3,614.05,362.35,251.7\nMYN00385,,Bengaluru,Returning,Kids,Kids T-Shirts,Kids,1,401.18,50,200.59,Credit Card,Delivered,4.6,200.59,119.96,80.63\nMYN00386,,Bengaluru,Returning,Kids,Sunglasses,Accessories,1,1490.95,40,596.38,UPI,Returned,4.7,894.5700000000001,593.28,301.29\nMYN00387,,Hyderabad,Returning,Women,Kurtas,Indian Wear,2,538.17,0,0,UPI,Delivered,3.6,1076.34,835.67,240.67\nMYN00388,,Bengaluru,Returning,Kids,Sneakers,Footwear,2,4907.8,10,981.5599999999999,UPI,Delivered,3.4,8834.040000000001,5488.28,3345.76\nMYN00389,,Chennai,Returning,Women,Watches,Accessories,1,3677.57,10,367.76,Cash on Delivery,Delivered,3.1,3309.81,2254.74,1055.07\nMYN00390,,Mumbai,Returning,Kids,Sneakers,Footwear,1,4090.29,30,1227.09,UPI,Delivered,4.4,2863.2,1681.17,1182.03\nMYN00391,,Chennai,Returning,Women,Sunglasses,Accessories,1,442.79,40,177.12,Net Banking,Delivered,3,265.67,175.13,90.54000000000001\nMYN00392,,Mumbai,New,Women,Beauty Products,Beauty,1,2108.24,20,421.65,UPI,Delivered,3.2,1686.59,1205.2,481.39\nMYN00393,,Delhi,Returning,Women,Sneakers,Footwear,1,4243.97,10,424.4,Cash on Delivery,Delivered,3.4,3819.57,2887.34,932.23\nMYN00394,,Hyderabad,New,Kids,Sarees,Indian Wear,2,2817.93,30,1690.76,Credit Card,Delivered,3.2,3945.1,2223.47,1721.63\nMYN00395,,Bengaluru,Returning,Kids,Sunglasses,Accessories,1,426.77,20,85.34999999999999,UPI,Delivered,4.4,341.42,227.51,113.91\nMYN00396,,Chennai,Returning,Men,Kurtis,Indian Wear,3,1283.77,40,1540.52,Net Banking,Shipped,3.1,2310.79,1776.22,534.5700000000001\nMYN00397,,Bengaluru,Returning,Kids,Watches,Accessories,1,3143.2,0,0,UPI,Delivered,3.9,3143.2,2381.13,762.0700000000001\nMYN00398,,Hyderabad,Returning,Men,Tops,Women's Western Wear,1,425.25,20,85.05,UPI,Delivered,4.2,340.2,207.03,133.17\nMYN00399,,Pune,New,Men,Kids Dresses,Kids,2,1157.71,20,463.08,Cash on Delivery,Delivered,4.9,1852.34,1028.54,823.8\nMYN00400,,Mumbai,Returning,Women,Kurtis,Indian Wear,1,1641.33,10,164.13,Cash on Delivery,Delivered,3,1477.2,1019.59,457.61\nMYN00401,,Mumbai,New,Men,Kids T-Shirts,Kids,1,791.17,0,0,UPI,Delivered,3.5,791.17,580.99,210.18\nMYN00402,,Mumbai,Returning,Kids,T-Shirts,Men's Fashion,1,1247.57,10,124.76,UPI,Delivered,4.7,1122.81,626.5,496.31\nMYN00403,,Delhi,New,Women,Sports Shoes,Sports,1,2145.17,30,643.55,UPI,Delivered,4.1,1501.62,839.73,661.89\nMYN00404,,Delhi,Returning,Kids,Kurtis,Indian Wear,1,1796.25,40,718.5,UPI,Cancelled,4,1077.75,675.99,401.76\nMYN00405,,Hyderabad,Returning,Men,Sandals,Footwear,1,1473.99,0,0,UPI,Delivered,4.1,1473.99,1086.01,387.98\nMYN00406,,Ahmedabad,New,Kids,Kids Dresses,Kids,1,1239.52,10,123.95,Debit Card,Delivered,4.8,1115.57,751.89,363.68\nMYN00407,,Hyderabad,New,Men,Sports T-Shirts,Sports,4,1145.2,10,458.08,UPI,Delivered,4.9,4122.72,2493.17,1629.55\nMYN00408,,Ahmedabad,Returning,Kids,Sports T-Shirts,Sports,1,1039.04,30,311.71,Cash on Delivery,Delivered,3.4,727.33,507.04,220.29\nMYN00409,,Ahmedabad,Returning,Men,Sarees,Indian Wear,1,1771.87,0,0,Debit Card,Cancelled,5,1771.87,1035.22,736.65\nMYN00410,,Bengaluru,New,Women,Sports T-Shirts,Sports,2,1514.99,20,606,Credit Card,Shipped,4.5,2423.98,1346.84,1077.14\nMYN00411,,Hyderabad,Returning,Women,Kids Dresses,Kids,1,1484.84,20,296.97,Cash on Delivery,Delivered,4.2,1187.87,791.17,396.7\nMYN00412,,Mumbai,Returning,Women,Sarees,Indian Wear,3,2964.54,40,3557.45,Net Banking,Delivered,3.1,5336.17,3855.38,1480.79\nMYN00413,,Delhi,New,Women,Jeans,Men's Fashion,3,1088.79,0,0,Credit Card,Delivered,4.1,3266.37,1963.38,1302.99\nMYN00414,,Ahmedabad,Returning,Men,Shirts,Men's Fashion,2,1962.59,20,785.04,UPI,Delivered,4,3140.14,2177.87,962.27\nMYN00415,,Chennai,New,Women,Sports T-Shirts,Sports,1,657.61,10,65.76000000000001,Net Banking,Delivered,4.6,591.85,331.13,260.72\nMYN00416,,Chennai,Returning,Women,Heels,Footwear,1,1382.54,0,0,UPI,Delivered,4,1382.54,1017.16,365.38\nMYN00417,,Hyderabad,New,Men,Beauty Products,Beauty,1,1191.36,20,238.27,UPI,Delivered,4.6,953.09,714.96,238.13\nMYN00418,,Ahmedabad,New,Men,T-Shirts,Men's Fashion,4,1282.27,30,1538.72,Cash on Delivery,Delivered,3.2,3590.36,2558.58,1031.78\nMYN00419,,Chennai,Returning,Kids,Dresses,Women's Western Wear,2,2254.65,10,450.93,Debit Card,Delivered,3.7,4058.37,2297.12,1761.25\nMYN00420,,Delhi,New,Men,Jeans,Men's Fashion,4,1261.77,40,2018.83,UPI,Shipped,3.4,3028.25,2073.51,954.74\nMYN00421,,Hyderabad,New,Men,Sneakers,Footwear,1,4460.53,30,1338.16,UPI,Returned,3.5,3122.37,2129.38,992.99\nMYN00422,,Pune,New,Kids,Sandals,Footwear,1,1724.07,0,0,Debit Card,Delivered,4.5,1724.07,1309.9,414.17\nMYN00423,,Pune,New,Kids,Kids Dresses,Kids,1,801.3200000000001,10,80.13,UPI,Delivered,4.2,721.1900000000001,422.62,298.57\nMYN00424,,Chennai,New,Women,Sunglasses,Accessories,1,1113.62,20,222.72,Cash on Delivery,Shipped,3.7,890.9,586.28,304.62\nMYN00425,,Bengaluru,New,Kids,Shirts,Men's Fashion,1,754.59,10,75.45999999999999,UPI,Delivered,3,679.13,406.1,273.03\nMYN00426,,Ahmedabad,Returning,Women,Sneakers,Footwear,1,4967.14,40,1986.86,Cash on Delivery,Delivered,3.4,2980.28,2137.86,842.42\nMYN00427,,Delhi,Returning,Men,Sunglasses,Accessories,1,1345.19,0,0,Debit Card,Returned,3.2,1345.19,884.04,461.15\nMYN00428,,Delhi,New,Kids,Dresses,Women's Western Wear,2,2731.57,30,1638.94,UPI,Delivered,3.4,3824.2,2522.53,1301.67\nMYN00429,,Kolkata,New,Kids,T-Shirts,Men's Fashion,1,1146.55,10,114.66,UPI,Shipped,4.3,1031.89,593,438.89\nMYN00430,,Bengaluru,Returning,Kids,Heels,Footwear,2,2856.94,40,2285.55,Credit Card,Delivered,3.2,3428.33,1919.06,1509.27\nMYN00431,,Chennai,New,Men,Sandals,Footwear,1,1057.76,20,211.55,Cash on Delivery,Delivered,3.7,846.21,475.81,370.4\nMYN00432,,Hyderabad,Returning,Women,T-Shirts,Men's Fashion,1,532.6799999999999,50,266.34,Net Banking,Delivered,3.8,266.34,191.36,74.98\nMYN00433,,Pune,New,Women,Jeans,Men's Fashion,2,1774.02,10,354.8,Net Banking,Delivered,3.8,3193.24,1770.27,1422.97\nMYN00434,,Mumbai,New,Men,Kids T-Shirts,Kids,1,412.68,10,41.27,Credit Card,Cancelled,4.8,371.41,272.7,98.70999999999999\nMYN00435,,Delhi,New,Men,Sunglasses,Accessories,2,1001.83,0,0,Credit Card,Delivered,4.8,2003.66,1562.42,441.24\nMYN00436,,Ahmedabad,Returning,Men,Watches,Accessories,1,3349.13,30,1004.74,Credit Card,Delivered,3.7,2344.39,1468.51,875.88\nMYN00437,,Kolkata,Returning,Men,Beauty Products,Beauty,3,2395.83,30,2156.25,Credit Card,Delivered,4.9,5031.24,3336.53,1694.71\nMYN00438,,Pune,Returning,Kids,Sandals,Footwear,1,620.12,20,124.02,Credit Card,Delivered,3.5,496.1,383.76,112.34\nMYN00439,,Pune,New,Men,Handbags,Accessories,2,1555.42,40,1244.34,Credit Card,Delivered,4.7,1866.5,1383.9,482.6\nMYN00440,,Mumbai,Returning,Kids,Sunglasses,Accessories,1,317.75,0,0,Debit Card,Delivered,4.4,317.75,213.49,104.26\nMYN00441,,Mumbai,Returning,Women,Sarees,Indian Wear,3,2222.34,10,666.7,Debit Card,Delivered,4.1,6000.32,3770.2,2230.12\nMYN00442,,Mumbai,Returning,Kids,Jeans,Men's Fashion,1,1384.13,30,415.24,UPI,Delivered,4.9,968.89,725.17,243.72\nMYN00443,,Chennai,New,Kids,Kurtis,Indian Wear,2,1447.39,30,868.4299999999999,UPI,Delivered,4.7,2026.35,1302,724.35\nMYN00444,,Mumbai,New,Women,T-Shirts,Men's Fashion,2,1003.25,20,401.3,Credit Card,Cancelled,3.4,1605.2,883.29,721.91\nMYN00445,,Pune,New,Women,Perfume,Beauty,1,2431.5,10,243.15,UPI,Delivered,3,2188.35,1590.2,598.15\nMYN00446,,Pune,Returning,Women,Sports Shoes,Sports,2,3262.07,30,1957.24,Credit Card,Delivered,4,4566.9,3527.16,1039.74\nMYN00447,,Kolkata,New,Women,Kids Dresses,Kids,1,1274.76,40,509.9,Debit Card,Delivered,4.9,764.86,542.79,222.07\nMYN00448,,Delhi,New,Kids,Handbags,Accessories,1,1905.36,20,381.07,UPI,Delivered,4.6,1524.29,1005.39,518.9\nMYN00449,,Delhi,Returning,Men,Sports T-Shirts,Sports,1,1228.28,40,491.31,Credit Card,Delivered,3.6,736.97,518.66,218.31\nMYN00450,,Chennai,New,Men,Sandals,Footwear,1,1578.92,30,473.68,Cash on Delivery,Delivered,3.7,1105.24,663.48,441.76\nMYN00451,,Delhi,Returning,Men,Sports T-Shirts,Sports,2,1553.86,0,0,UPI,Delivered,3.7,3107.72,2161.74,945.98\nMYN00452,,Kolkata,New,Men,Beauty Products,Beauty,1,597.9299999999999,30,179.38,Debit Card,Delivered,3.6,418.55,288.48,130.07\nMYN00453,,Bengaluru,New,Men,Sports T-Shirts,Sports,2,1534.01,20,613.6,UPI,Delivered,3.6,2454.42,1756.59,697.83\nMYN00454,,Delhi,New,Women,Beauty Products,Beauty,1,768.62,10,76.86,Cash on Delivery,Returned,4,691.76,465.01,226.75\nMYN00455,,Chennai,New,Men,Sunglasses,Accessories,3,1294.14,10,388.24,Net Banking,Returned,4.7,3494.18,2213.98,1280.2\nMYN00456,,Pune,Returning,Kids,Heels,Footwear,3,2006.43,40,2407.72,UPI,Delivered,3.7,3611.57,2016.64,1594.93\nMYN00457,,Kolkata,Returning,Women,Kurtas,Indian Wear,2,1172.89,0,0,UPI,Delivered,4.6,2345.78,1522.75,823.03\nMYN00458,,Mumbai,Returning,Women,Handbags,Accessories,1,821.49,20,164.3,Net Banking,Delivered,3.4,657.1900000000001,501.16,156.03\nMYN00459,,Hyderabad,Returning,Men,Sports Shoes,Sports,1,2302.13,40,920.85,UPI,Delivered,3.4,1381.28,1004.73,376.55\nMYN00460,,Ahmedabad,Returning,Men,Kurtis,Indian Wear,2,1326.56,30,795.9400000000001,Debit Card,Shipped,4.8,1857.18,1159.11,698.0700000000001\nMYN00461,,Hyderabad,New,Men,Heels,Footwear,1,2157.54,30,647.26,Debit Card,Delivered,4.3,1510.28,1037.83,472.45\nMYN00462,,Ahmedabad,New,Women,Sunglasses,Accessories,1,1175.54,20,235.11,Debit Card,Delivered,3.2,940.4299999999999,594.04,346.39\nMYN00463,,Bengaluru,Returning,Kids,Sandals,Footwear,1,1332.48,30,399.74,Debit Card,Delivered,4.5,932.74,614.2,318.54\nMYN00464,,Chennai,Returning,Kids,Handbags,Accessories,1,2488.32,20,497.66,Cash on Delivery,Delivered,4.9,1990.66,1318.62,672.04\nMYN00465,,Mumbai,Returning,Kids,Sports Shoes,Sports,1,4416.08,20,883.22,Cash on Delivery,Delivered,4.8,3532.86,2643.84,889.02\nMYN00466,,Ahmedabad,New,Men,Heels,Footwear,1,2671.49,30,801.45,Debit Card,Delivered,3,1870.04,1298.95,571.09\nMYN00467,,Mumbai,New,Kids,Handbags,Accessories,2,2160.44,30,1296.26,Debit Card,Delivered,4.4,3024.62,1693.09,1331.53\nMYN00468,,Delhi,New,Kids,Sarees,Indian Wear,1,3576.58,20,715.3200000000001,Credit Card,Delivered,4.5,2861.26,1610.95,1250.31\nMYN00469,,Hyderabad,Returning,Kids,Perfume,Beauty,3,1133.58,30,1020.22,UPI,Delivered,3.3,2380.52,1750.75,629.77\nMYN00470,,Bengaluru,Returning,Men,Beauty Products,Beauty,3,1365.46,40,1638.55,Cash on Delivery,Delivered,4.3,2457.83,1377.84,1079.99\nMYN00471,,Kolkata,Returning,Women,Kurtis,Indian Wear,1,1526.22,40,610.49,Debit Card,Delivered,4.8,915.73,666.38,249.35\nMYN00472,,Ahmedabad,Returning,Kids,Sarees,Indian Wear,2,2315.06,40,1852.05,UPI,Delivered,4.4,2778.07,1887.34,890.73\nMYN00473,,Ahmedabad,Returning,Men,Sports Shoes,Sports,4,3353.55,50,6707.1,UPI,Delivered,4.1,6707.1,4405.41,2301.69\nMYN00474,,Kolkata,Returning,Men,Jeans,Men's Fashion,2,1933.7,50,1933.7,UPI,Delivered,4.9,1933.7,1135.3,798.4\nMYN00475,,Hyderabad,New,Women,Kids Dresses,Kids,1,1343.12,30,402.94,UPI,Delivered,4.3,940.1799999999999,652.9,287.28\nMYN00476,,Ahmedabad,Returning,Men,T-Shirts,Men's Fashion,3,1081.38,20,648.83,UPI,Delivered,4.5,2595.31,1580.25,1015.06\nMYN00477,,Bengaluru,New,Men,Kurtis,Indian Wear,3,1895.54,20,1137.32,Cash on Delivery,Delivered,4.6,4549.3,2924.39,1624.91\nMYN00478,,Delhi,Returning,Men,Kurtis,Indian Wear,1,882.02,30,264.61,Debit Card,Delivered,4.1,617.41,357.09,260.32\nMYN00479,,Hyderabad,New,Men,Perfume,Beauty,1,1367.36,40,546.9400000000001,Debit Card,Returned,4,820.42,556.08,264.34\nMYN00480,,Chennai,New,Women,Heels,Footwear,2,1849.57,30,1109.74,Cash on Delivery,Returned,3.4,2589.4,1791.63,797.77\nMYN00481,,Mumbai,New,Kids,Jeans,Men's Fashion,3,1964.76,40,2357.71,UPI,Returned,4.7,3536.57,2486.92,1049.65\nMYN00482,,Mumbai,Returning,Women,Sunglasses,Accessories,1,383.06,30,114.92,UPI,Delivered,3.6,268.14,160.41,107.73\nMYN00483,,Delhi,Returning,Men,Kids T-Shirts,Kids,1,485,20,97,Debit Card,Cancelled,3.2,388,279.79,108.21\nMYN00484,,Delhi,Returning,Men,Beauty Products,Beauty,2,1144.46,10,228.89,Net Banking,Delivered,3.9,2060.03,1538.15,521.88\nMYN00485,,Ahmedabad,Returning,Men,Sarees,Indian Wear,4,1695.71,40,2713.14,Net Banking,Delivered,3.3,4069.7,3063.01,1006.69\nMYN00486,,Ahmedabad,Returning,Kids,Perfume,Beauty,1,3957.13,40,1582.85,Net Banking,Delivered,3.3,2374.28,1586.3,787.98\nMYN00487,,Bengaluru,New,Women,Tops,Women's Western Wear,2,841.8,40,673.4400000000001,Debit Card,Delivered,4.2,1010.16,754.49,255.67\nMYN00488,,Bengaluru,Returning,Men,Shirts,Men's Fashion,1,698.21,20,139.64,Credit Card,Delivered,3.7,558.5700000000001,422.69,135.88\nMYN00489,,Kolkata,New,Men,Sarees,Indian Wear,1,3241.5,20,648.3,Debit Card,Delivered,4.5,2593.2,1886.45,706.75\nMYN00490,,Pune,Returning,Women,Heels,Footwear,1,869.96,10,87,Net Banking,Cancelled,4.7,782.96,572.6799999999999,210.28\nMYN00491,,Delhi,New,Women,Sandals,Footwear,3,1394.74,30,1255.27,Cash on Delivery,Cancelled,4.8,2928.95,1982.87,946.08\nMYN00492,,Kolkata,Returning,Men,Sports Shoes,Sports,2,1685.22,40,1348.18,Credit Card,Delivered,4.9,2022.26,1165.95,856.3099999999999\nMYN00493,,Bengaluru,Returning,Kids,Perfume,Beauty,1,3222.83,30,966.85,Cash on Delivery,Cancelled,4.2,2255.98,1614.48,641.5\nMYN00494,,Kolkata,Returning,Kids,Shirts,Men's Fashion,2,909.1900000000001,10,181.84,Net Banking,Delivered,4.3,1636.54,1190.65,445.89\nMYN00495,,Chennai,Returning,Kids,Sneakers,Footwear,2,3149.99,20,1260,Credit Card,Shipped,4,5039.98,2939.21,2100.77\nMYN00496,,Kolkata,New,Men,Dresses,Women's Western Wear,1,1749.78,0,0,Net Banking,Delivered,4.9,1749.78,1224.4,525.38\nMYN00497,,Bengaluru,Returning,Kids,Tops,Women's Western Wear,1,540.65,20,108.13,UPI,Delivered,3.8,432.52,257.13,175.39\nMYN00498,,Kolkata,New,Kids,Kurtas,Indian Wear,3,509.71,20,305.83,Credit Card,Cancelled,3.7,1223.3,844.4,378.9\nMYN00499,,Pune,Returning,Kids,Sarees,Indian Wear,1,2498.05,30,749.42,UPI,Delivered,4.7,1748.63,1115.38,633.25\nMYN00500,,Mumbai,Returning,Kids,Shirts,Men's Fashion,1,1282.45,30,384.74,UPI,Cancelled,4,897.71,513.74,383.97\n"
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B2",
+      "props": {
+        "value": "2026-03-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B3",
+      "props": {
+        "value": "2026-02-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B4",
+      "props": {
+        "value": "2026-02-11",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B5",
+      "props": {
+        "value": "2026-03-28",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B6",
+      "props": {
+        "value": "2026-03-17",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B7",
+      "props": {
+        "value": "2026-06-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B8",
+      "props": {
+        "value": "2026-03-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B9",
+      "props": {
+        "value": "2026-04-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B10",
+      "props": {
+        "value": "2026-03-09",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B11",
+      "props": {
+        "value": "2026-03-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B12",
+      "props": {
+        "value": "2026-06-09",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B13",
+      "props": {
+        "value": "2026-05-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B14",
+      "props": {
+        "value": "2026-06-11",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B15",
+      "props": {
+        "value": "2026-02-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B16",
+      "props": {
+        "value": "2026-03-28",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B17",
+      "props": {
+        "value": "2026-06-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B18",
+      "props": {
+        "value": "2026-05-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B19",
+      "props": {
+        "value": "2026-05-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B20",
+      "props": {
+        "value": "2026-05-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B21",
+      "props": {
+        "value": "2026-02-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B22",
+      "props": {
+        "value": "2026-03-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B23",
+      "props": {
+        "value": "2026-01-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B24",
+      "props": {
+        "value": "2026-02-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B25",
+      "props": {
+        "value": "2026-05-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B26",
+      "props": {
+        "value": "2026-05-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B27",
+      "props": {
+        "value": "2026-05-11",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B28",
+      "props": {
+        "value": "2026-05-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B29",
+      "props": {
+        "value": "2026-05-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B30",
+      "props": {
+        "value": "2026-02-17",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B31",
+      "props": {
+        "value": "2026-03-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B32",
+      "props": {
+        "value": "2026-03-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B33",
+      "props": {
+        "value": "2026-01-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B34",
+      "props": {
+        "value": "2026-05-28",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B35",
+      "props": {
+        "value": "2026-06-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B36",
+      "props": {
+        "value": "2026-01-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B37",
+      "props": {
+        "value": "2026-03-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B38",
+      "props": {
+        "value": "2026-05-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B39",
+      "props": {
+        "value": "2026-01-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B40",
+      "props": {
+        "value": "2026-05-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B41",
+      "props": {
+        "value": "2026-06-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B42",
+      "props": {
+        "value": "2026-03-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B43",
+      "props": {
+        "value": "2026-03-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B44",
+      "props": {
+        "value": "2026-06-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B45",
+      "props": {
+        "value": "2026-04-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B46",
+      "props": {
+        "value": "2026-01-28",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B47",
+      "props": {
+        "value": "2026-04-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B48",
+      "props": {
+        "value": "2026-01-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B49",
+      "props": {
+        "value": "2026-03-30",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B50",
+      "props": {
+        "value": "2026-04-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B51",
+      "props": {
+        "value": "2026-06-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B52",
+      "props": {
+        "value": "2026-06-09",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B53",
+      "props": {
+        "value": "2026-05-09",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B54",
+      "props": {
+        "value": "2026-03-30",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B55",
+      "props": {
+        "value": "2026-05-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B56",
+      "props": {
+        "value": "2026-01-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B57",
+      "props": {
+        "value": "2026-04-10",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B58",
+      "props": {
+        "value": "2026-04-06",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B59",
+      "props": {
+        "value": "2026-01-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B60",
+      "props": {
+        "value": "2026-01-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B61",
+      "props": {
+        "value": "2026-05-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B62",
+      "props": {
+        "value": "2026-05-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B63",
+      "props": {
+        "value": "2026-06-28",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B64",
+      "props": {
+        "value": "2026-02-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B65",
+      "props": {
+        "value": "2026-05-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B66",
+      "props": {
+        "value": "2026-05-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B67",
+      "props": {
+        "value": "2026-02-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B68",
+      "props": {
+        "value": "2026-04-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B69",
+      "props": {
+        "value": "2026-06-17",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B70",
+      "props": {
+        "value": "2026-01-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B71",
+      "props": {
+        "value": "2026-04-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B72",
+      "props": {
+        "value": "2026-06-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B73",
+      "props": {
+        "value": "2026-01-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B74",
+      "props": {
+        "value": "2026-03-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B75",
+      "props": {
+        "value": "2026-01-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B76",
+      "props": {
+        "value": "2026-01-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B77",
+      "props": {
+        "value": "2026-05-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B78",
+      "props": {
+        "value": "2026-02-10",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B79",
+      "props": {
+        "value": "2026-02-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B80",
+      "props": {
+        "value": "2026-04-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B81",
+      "props": {
+        "value": "2026-06-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B82",
+      "props": {
+        "value": "2026-03-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B83",
+      "props": {
+        "value": "2026-01-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B84",
+      "props": {
+        "value": "2026-05-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B85",
+      "props": {
+        "value": "2026-06-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B86",
+      "props": {
+        "value": "2026-01-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B87",
+      "props": {
+        "value": "2026-04-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B88",
+      "props": {
+        "value": "2026-05-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B89",
+      "props": {
+        "value": "2026-03-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B90",
+      "props": {
+        "value": "2026-04-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B91",
+      "props": {
+        "value": "2026-04-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B92",
+      "props": {
+        "value": "2026-04-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B93",
+      "props": {
+        "value": "2026-04-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B94",
+      "props": {
+        "value": "2026-01-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B95",
+      "props": {
+        "value": "2026-03-30",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B96",
+      "props": {
+        "value": "2026-03-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B97",
+      "props": {
+        "value": "2026-01-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B98",
+      "props": {
+        "value": "2026-03-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B99",
+      "props": {
+        "value": "2026-01-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B100",
+      "props": {
+        "value": "2026-03-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B101",
+      "props": {
+        "value": "2026-02-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B102",
+      "props": {
+        "value": "2026-06-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B103",
+      "props": {
+        "value": "2026-05-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B104",
+      "props": {
+        "value": "2026-01-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B105",
+      "props": {
+        "value": "2026-05-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B106",
+      "props": {
+        "value": "2026-06-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B107",
+      "props": {
+        "value": "2026-04-17",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B108",
+      "props": {
+        "value": "2026-04-13",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B109",
+      "props": {
+        "value": "2026-02-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B110",
+      "props": {
+        "value": "2026-03-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B111",
+      "props": {
+        "value": "2026-04-30",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B112",
+      "props": {
+        "value": "2026-06-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B113",
+      "props": {
+        "value": "2026-05-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B114",
+      "props": {
+        "value": "2026-05-13",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B115",
+      "props": {
+        "value": "2026-01-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B116",
+      "props": {
+        "value": "2026-01-13",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B117",
+      "props": {
+        "value": "2026-06-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B118",
+      "props": {
+        "value": "2026-03-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B119",
+      "props": {
+        "value": "2026-01-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B120",
+      "props": {
+        "value": "2026-04-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B121",
+      "props": {
+        "value": "2026-05-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B122",
+      "props": {
+        "value": "2026-02-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B123",
+      "props": {
+        "value": "2026-01-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B124",
+      "props": {
+        "value": "2026-01-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B125",
+      "props": {
+        "value": "2026-06-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B126",
+      "props": {
+        "value": "2026-02-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B127",
+      "props": {
+        "value": "2026-02-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B128",
+      "props": {
+        "value": "2026-04-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B129",
+      "props": {
+        "value": "2026-04-30",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B130",
+      "props": {
+        "value": "2026-03-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B131",
+      "props": {
+        "value": "2026-04-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B132",
+      "props": {
+        "value": "2026-01-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B133",
+      "props": {
+        "value": "2026-06-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B134",
+      "props": {
+        "value": "2026-02-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B135",
+      "props": {
+        "value": "2026-01-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B136",
+      "props": {
+        "value": "2026-03-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B137",
+      "props": {
+        "value": "2026-06-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B138",
+      "props": {
+        "value": "2026-01-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B139",
+      "props": {
+        "value": "2026-05-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B140",
+      "props": {
+        "value": "2026-05-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B141",
+      "props": {
+        "value": "2026-05-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B142",
+      "props": {
+        "value": "2026-04-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B143",
+      "props": {
+        "value": "2026-01-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B144",
+      "props": {
+        "value": "2026-02-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B145",
+      "props": {
+        "value": "2026-04-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B146",
+      "props": {
+        "value": "2026-04-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B147",
+      "props": {
+        "value": "2026-02-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B148",
+      "props": {
+        "value": "2026-02-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B149",
+      "props": {
+        "value": "2026-02-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B150",
+      "props": {
+        "value": "2026-03-06",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B151",
+      "props": {
+        "value": "2026-04-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B152",
+      "props": {
+        "value": "2026-05-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B153",
+      "props": {
+        "value": "2026-04-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B154",
+      "props": {
+        "value": "2026-02-28",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B155",
+      "props": {
+        "value": "2026-05-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B156",
+      "props": {
+        "value": "2026-05-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B157",
+      "props": {
+        "value": "2026-05-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B158",
+      "props": {
+        "value": "2026-03-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B159",
+      "props": {
+        "value": "2026-01-09",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B160",
+      "props": {
+        "value": "2026-04-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B161",
+      "props": {
+        "value": "2026-01-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B162",
+      "props": {
+        "value": "2026-02-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B163",
+      "props": {
+        "value": "2026-01-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B164",
+      "props": {
+        "value": "2026-02-10",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B165",
+      "props": {
+        "value": "2026-03-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B166",
+      "props": {
+        "value": "2026-05-11",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B167",
+      "props": {
+        "value": "2026-04-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B168",
+      "props": {
+        "value": "2026-01-13",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B169",
+      "props": {
+        "value": "2026-01-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B170",
+      "props": {
+        "value": "2026-03-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B171",
+      "props": {
+        "value": "2026-01-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B172",
+      "props": {
+        "value": "2026-05-17",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B173",
+      "props": {
+        "value": "2026-01-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B174",
+      "props": {
+        "value": "2026-03-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B175",
+      "props": {
+        "value": "2026-03-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B176",
+      "props": {
+        "value": "2026-01-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B177",
+      "props": {
+        "value": "2026-02-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B178",
+      "props": {
+        "value": "2026-04-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B179",
+      "props": {
+        "value": "2026-03-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B180",
+      "props": {
+        "value": "2026-06-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B181",
+      "props": {
+        "value": "2026-05-17",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B182",
+      "props": {
+        "value": "2026-03-10",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B183",
+      "props": {
+        "value": "2026-05-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B184",
+      "props": {
+        "value": "2026-06-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B185",
+      "props": {
+        "value": "2026-05-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B186",
+      "props": {
+        "value": "2026-06-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B187",
+      "props": {
+        "value": "2026-03-09",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B188",
+      "props": {
+        "value": "2026-01-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B189",
+      "props": {
+        "value": "2026-05-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B190",
+      "props": {
+        "value": "2026-04-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B191",
+      "props": {
+        "value": "2026-06-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B192",
+      "props": {
+        "value": "2026-05-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B193",
+      "props": {
+        "value": "2026-02-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B194",
+      "props": {
+        "value": "2026-06-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B195",
+      "props": {
+        "value": "2026-03-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B196",
+      "props": {
+        "value": "2026-04-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B197",
+      "props": {
+        "value": "2026-02-09",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B198",
+      "props": {
+        "value": "2026-04-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B199",
+      "props": {
+        "value": "2026-02-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B200",
+      "props": {
+        "value": "2026-03-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B201",
+      "props": {
+        "value": "2026-01-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B202",
+      "props": {
+        "value": "2026-06-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B203",
+      "props": {
+        "value": "2026-04-10",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B204",
+      "props": {
+        "value": "2026-02-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B205",
+      "props": {
+        "value": "2026-06-06",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B206",
+      "props": {
+        "value": "2026-02-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B207",
+      "props": {
+        "value": "2026-05-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B208",
+      "props": {
+        "value": "2026-02-09",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B209",
+      "props": {
+        "value": "2026-05-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B210",
+      "props": {
+        "value": "2026-03-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B211",
+      "props": {
+        "value": "2026-02-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B212",
+      "props": {
+        "value": "2026-06-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B213",
+      "props": {
+        "value": "2026-03-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B214",
+      "props": {
+        "value": "2026-03-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B215",
+      "props": {
+        "value": "2026-06-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B216",
+      "props": {
+        "value": "2026-02-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B217",
+      "props": {
+        "value": "2026-01-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B218",
+      "props": {
+        "value": "2026-05-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B219",
+      "props": {
+        "value": "2026-01-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B220",
+      "props": {
+        "value": "2026-01-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B221",
+      "props": {
+        "value": "2026-01-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B222",
+      "props": {
+        "value": "2026-03-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B223",
+      "props": {
+        "value": "2026-01-17",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B224",
+      "props": {
+        "value": "2026-05-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B225",
+      "props": {
+        "value": "2026-04-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B226",
+      "props": {
+        "value": "2026-04-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B227",
+      "props": {
+        "value": "2026-05-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B228",
+      "props": {
+        "value": "2026-02-28",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B229",
+      "props": {
+        "value": "2026-06-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B230",
+      "props": {
+        "value": "2026-02-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B231",
+      "props": {
+        "value": "2026-06-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B232",
+      "props": {
+        "value": "2026-04-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B233",
+      "props": {
+        "value": "2026-04-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B234",
+      "props": {
+        "value": "2026-05-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B235",
+      "props": {
+        "value": "2026-01-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B236",
+      "props": {
+        "value": "2026-03-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B237",
+      "props": {
+        "value": "2026-04-11",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B238",
+      "props": {
+        "value": "2026-06-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B239",
+      "props": {
+        "value": "2026-02-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B240",
+      "props": {
+        "value": "2026-01-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B241",
+      "props": {
+        "value": "2026-03-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B242",
+      "props": {
+        "value": "2026-02-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B243",
+      "props": {
+        "value": "2026-04-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B244",
+      "props": {
+        "value": "2026-06-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B245",
+      "props": {
+        "value": "2026-06-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B246",
+      "props": {
+        "value": "2026-06-30",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B247",
+      "props": {
+        "value": "2026-06-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B248",
+      "props": {
+        "value": "2026-05-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B249",
+      "props": {
+        "value": "2026-04-13",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B250",
+      "props": {
+        "value": "2026-01-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B251",
+      "props": {
+        "value": "2026-01-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B252",
+      "props": {
+        "value": "2026-03-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B253",
+      "props": {
+        "value": "2026-01-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B254",
+      "props": {
+        "value": "2026-04-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B255",
+      "props": {
+        "value": "2026-06-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B256",
+      "props": {
+        "value": "2026-05-13",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B257",
+      "props": {
+        "value": "2026-06-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B258",
+      "props": {
+        "value": "2026-02-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B259",
+      "props": {
+        "value": "2026-01-13",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B260",
+      "props": {
+        "value": "2026-04-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B261",
+      "props": {
+        "value": "2026-05-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B262",
+      "props": {
+        "value": "2026-06-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B263",
+      "props": {
+        "value": "2026-02-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B264",
+      "props": {
+        "value": "2026-01-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B265",
+      "props": {
+        "value": "2026-03-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B266",
+      "props": {
+        "value": "2026-05-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B267",
+      "props": {
+        "value": "2026-05-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B268",
+      "props": {
+        "value": "2026-01-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B269",
+      "props": {
+        "value": "2026-01-28",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B270",
+      "props": {
+        "value": "2026-06-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B271",
+      "props": {
+        "value": "2026-02-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B272",
+      "props": {
+        "value": "2026-04-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B273",
+      "props": {
+        "value": "2026-04-09",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B274",
+      "props": {
+        "value": "2026-02-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B275",
+      "props": {
+        "value": "2026-01-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B276",
+      "props": {
+        "value": "2026-05-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B277",
+      "props": {
+        "value": "2026-02-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B278",
+      "props": {
+        "value": "2026-06-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B279",
+      "props": {
+        "value": "2026-02-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B280",
+      "props": {
+        "value": "2026-04-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B281",
+      "props": {
+        "value": "2026-03-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B282",
+      "props": {
+        "value": "2026-03-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B283",
+      "props": {
+        "value": "2026-01-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B284",
+      "props": {
+        "value": "2026-01-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B285",
+      "props": {
+        "value": "2026-01-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B286",
+      "props": {
+        "value": "2026-03-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B287",
+      "props": {
+        "value": "2026-06-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B288",
+      "props": {
+        "value": "2026-05-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B289",
+      "props": {
+        "value": "2026-04-06",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B290",
+      "props": {
+        "value": "2026-04-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B291",
+      "props": {
+        "value": "2026-06-17",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B292",
+      "props": {
+        "value": "2026-02-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B293",
+      "props": {
+        "value": "2026-05-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B294",
+      "props": {
+        "value": "2026-06-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B295",
+      "props": {
+        "value": "2026-04-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B296",
+      "props": {
+        "value": "2026-02-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B297",
+      "props": {
+        "value": "2026-05-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B298",
+      "props": {
+        "value": "2026-03-17",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B299",
+      "props": {
+        "value": "2026-04-28",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B300",
+      "props": {
+        "value": "2026-05-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B301",
+      "props": {
+        "value": "2026-06-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B302",
+      "props": {
+        "value": "2026-03-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B303",
+      "props": {
+        "value": "2026-01-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B304",
+      "props": {
+        "value": "2026-04-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B305",
+      "props": {
+        "value": "2026-06-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B306",
+      "props": {
+        "value": "2026-01-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B307",
+      "props": {
+        "value": "2026-06-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B308",
+      "props": {
+        "value": "2026-01-28",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B309",
+      "props": {
+        "value": "2026-01-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B310",
+      "props": {
+        "value": "2026-05-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B311",
+      "props": {
+        "value": "2026-01-06",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B312",
+      "props": {
+        "value": "2026-06-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B313",
+      "props": {
+        "value": "2026-03-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B314",
+      "props": {
+        "value": "2026-01-17",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B315",
+      "props": {
+        "value": "2026-05-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B316",
+      "props": {
+        "value": "2026-06-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B317",
+      "props": {
+        "value": "2026-05-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B318",
+      "props": {
+        "value": "2026-03-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B319",
+      "props": {
+        "value": "2026-06-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B320",
+      "props": {
+        "value": "2026-04-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B321",
+      "props": {
+        "value": "2026-05-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B322",
+      "props": {
+        "value": "2026-06-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B323",
+      "props": {
+        "value": "2026-04-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B324",
+      "props": {
+        "value": "2026-01-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B325",
+      "props": {
+        "value": "2026-02-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B326",
+      "props": {
+        "value": "2026-02-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B327",
+      "props": {
+        "value": "2026-05-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B328",
+      "props": {
+        "value": "2026-03-30",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B329",
+      "props": {
+        "value": "2026-03-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B330",
+      "props": {
+        "value": "2026-04-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B331",
+      "props": {
+        "value": "2026-02-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B332",
+      "props": {
+        "value": "2026-06-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B333",
+      "props": {
+        "value": "2026-04-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B334",
+      "props": {
+        "value": "2026-02-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B335",
+      "props": {
+        "value": "2026-06-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B336",
+      "props": {
+        "value": "2026-05-09",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B337",
+      "props": {
+        "value": "2026-05-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B338",
+      "props": {
+        "value": "2026-03-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B339",
+      "props": {
+        "value": "2026-06-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B340",
+      "props": {
+        "value": "2026-04-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B341",
+      "props": {
+        "value": "2026-02-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B342",
+      "props": {
+        "value": "2026-06-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B343",
+      "props": {
+        "value": "2026-02-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B344",
+      "props": {
+        "value": "2026-02-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B345",
+      "props": {
+        "value": "2026-01-17",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B346",
+      "props": {
+        "value": "2026-02-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B347",
+      "props": {
+        "value": "2026-04-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B348",
+      "props": {
+        "value": "2026-02-06",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B349",
+      "props": {
+        "value": "2026-02-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B350",
+      "props": {
+        "value": "2026-01-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B351",
+      "props": {
+        "value": "2026-06-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B352",
+      "props": {
+        "value": "2026-01-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B353",
+      "props": {
+        "value": "2026-05-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B354",
+      "props": {
+        "value": "2026-01-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B355",
+      "props": {
+        "value": "2026-04-30",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B356",
+      "props": {
+        "value": "2026-04-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B357",
+      "props": {
+        "value": "2026-04-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B358",
+      "props": {
+        "value": "2026-02-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B359",
+      "props": {
+        "value": "2026-06-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B360",
+      "props": {
+        "value": "2026-02-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B361",
+      "props": {
+        "value": "2026-01-06",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B362",
+      "props": {
+        "value": "2026-02-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B363",
+      "props": {
+        "value": "2026-06-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B364",
+      "props": {
+        "value": "2026-05-06",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B365",
+      "props": {
+        "value": "2026-06-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B366",
+      "props": {
+        "value": "2026-01-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B367",
+      "props": {
+        "value": "2026-02-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B368",
+      "props": {
+        "value": "2026-04-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B369",
+      "props": {
+        "value": "2026-01-28",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B370",
+      "props": {
+        "value": "2026-04-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B371",
+      "props": {
+        "value": "2026-04-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B372",
+      "props": {
+        "value": "2026-01-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B373",
+      "props": {
+        "value": "2026-01-10",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B374",
+      "props": {
+        "value": "2026-06-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B375",
+      "props": {
+        "value": "2026-05-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B376",
+      "props": {
+        "value": "2026-02-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B377",
+      "props": {
+        "value": "2026-05-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B378",
+      "props": {
+        "value": "2026-01-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B379",
+      "props": {
+        "value": "2026-01-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B380",
+      "props": {
+        "value": "2026-05-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B381",
+      "props": {
+        "value": "2026-04-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B382",
+      "props": {
+        "value": "2026-05-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B383",
+      "props": {
+        "value": "2026-02-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B384",
+      "props": {
+        "value": "2026-02-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B385",
+      "props": {
+        "value": "2026-01-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B386",
+      "props": {
+        "value": "2026-03-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B387",
+      "props": {
+        "value": "2026-06-11",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B388",
+      "props": {
+        "value": "2026-06-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B389",
+      "props": {
+        "value": "2026-04-13",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B390",
+      "props": {
+        "value": "2026-05-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B391",
+      "props": {
+        "value": "2026-03-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B392",
+      "props": {
+        "value": "2026-01-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B393",
+      "props": {
+        "value": "2026-02-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B394",
+      "props": {
+        "value": "2026-05-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B395",
+      "props": {
+        "value": "2026-06-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B396",
+      "props": {
+        "value": "2026-01-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B397",
+      "props": {
+        "value": "2026-01-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B398",
+      "props": {
+        "value": "2026-04-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B399",
+      "props": {
+        "value": "2026-01-17",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B400",
+      "props": {
+        "value": "2026-06-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B401",
+      "props": {
+        "value": "2026-06-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B402",
+      "props": {
+        "value": "2026-05-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B403",
+      "props": {
+        "value": "2026-05-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B404",
+      "props": {
+        "value": "2026-02-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B405",
+      "props": {
+        "value": "2026-03-13",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B406",
+      "props": {
+        "value": "2026-06-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B407",
+      "props": {
+        "value": "2026-05-30",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B408",
+      "props": {
+        "value": "2026-06-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B409",
+      "props": {
+        "value": "2026-06-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B410",
+      "props": {
+        "value": "2026-04-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B411",
+      "props": {
+        "value": "2026-02-13",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B412",
+      "props": {
+        "value": "2026-01-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B413",
+      "props": {
+        "value": "2026-05-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B414",
+      "props": {
+        "value": "2026-03-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B415",
+      "props": {
+        "value": "2026-03-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B416",
+      "props": {
+        "value": "2026-01-28",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B417",
+      "props": {
+        "value": "2026-03-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B418",
+      "props": {
+        "value": "2026-03-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B419",
+      "props": {
+        "value": "2026-01-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B420",
+      "props": {
+        "value": "2026-05-30",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B421",
+      "props": {
+        "value": "2026-04-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B422",
+      "props": {
+        "value": "2026-06-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B423",
+      "props": {
+        "value": "2026-01-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B424",
+      "props": {
+        "value": "2026-01-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B425",
+      "props": {
+        "value": "2026-03-11",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B426",
+      "props": {
+        "value": "2026-06-05",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B427",
+      "props": {
+        "value": "2026-04-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B428",
+      "props": {
+        "value": "2026-06-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B429",
+      "props": {
+        "value": "2026-01-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B430",
+      "props": {
+        "value": "2026-04-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B431",
+      "props": {
+        "value": "2026-03-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B432",
+      "props": {
+        "value": "2026-06-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B433",
+      "props": {
+        "value": "2026-02-10",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B434",
+      "props": {
+        "value": "2026-04-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B435",
+      "props": {
+        "value": "2026-06-17",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B436",
+      "props": {
+        "value": "2026-03-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B437",
+      "props": {
+        "value": "2026-01-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B438",
+      "props": {
+        "value": "2026-02-11",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B439",
+      "props": {
+        "value": "2026-02-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B440",
+      "props": {
+        "value": "2026-06-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B441",
+      "props": {
+        "value": "2026-06-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B442",
+      "props": {
+        "value": "2026-02-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B443",
+      "props": {
+        "value": "2026-01-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B444",
+      "props": {
+        "value": "2026-04-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B445",
+      "props": {
+        "value": "2026-04-06",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B446",
+      "props": {
+        "value": "2026-06-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B447",
+      "props": {
+        "value": "2026-06-02",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B448",
+      "props": {
+        "value": "2026-01-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B449",
+      "props": {
+        "value": "2026-01-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B450",
+      "props": {
+        "value": "2026-04-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B451",
+      "props": {
+        "value": "2026-04-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B452",
+      "props": {
+        "value": "2026-01-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B453",
+      "props": {
+        "value": "2026-05-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B454",
+      "props": {
+        "value": "2026-02-11",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B455",
+      "props": {
+        "value": "2026-01-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B456",
+      "props": {
+        "value": "2026-01-24",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B457",
+      "props": {
+        "value": "2026-01-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B458",
+      "props": {
+        "value": "2026-06-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B459",
+      "props": {
+        "value": "2026-04-11",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B460",
+      "props": {
+        "value": "2026-01-04",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B461",
+      "props": {
+        "value": "2026-01-11",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B462",
+      "props": {
+        "value": "2026-05-18",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B463",
+      "props": {
+        "value": "2026-01-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B464",
+      "props": {
+        "value": "2026-03-14",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B465",
+      "props": {
+        "value": "2026-05-31",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B466",
+      "props": {
+        "value": "2026-01-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B467",
+      "props": {
+        "value": "2026-02-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B468",
+      "props": {
+        "value": "2026-05-06",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B469",
+      "props": {
+        "value": "2026-05-27",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B470",
+      "props": {
+        "value": "2026-04-03",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B471",
+      "props": {
+        "value": "2026-02-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B472",
+      "props": {
+        "value": "2026-06-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B473",
+      "props": {
+        "value": "2026-01-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B474",
+      "props": {
+        "value": "2026-06-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B475",
+      "props": {
+        "value": "2026-03-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B476",
+      "props": {
+        "value": "2026-01-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B477",
+      "props": {
+        "value": "2026-03-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B478",
+      "props": {
+        "value": "2026-05-07",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B479",
+      "props": {
+        "value": "2026-04-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B480",
+      "props": {
+        "value": "2026-04-12",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B481",
+      "props": {
+        "value": "2026-04-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B482",
+      "props": {
+        "value": "2026-02-20",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B483",
+      "props": {
+        "value": "2026-01-08",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B484",
+      "props": {
+        "value": "2026-03-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B485",
+      "props": {
+        "value": "2026-01-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B486",
+      "props": {
+        "value": "2026-03-13",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B487",
+      "props": {
+        "value": "2026-01-15",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B488",
+      "props": {
+        "value": "2026-04-22",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B489",
+      "props": {
+        "value": "2026-06-19",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B490",
+      "props": {
+        "value": "2026-02-01",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B491",
+      "props": {
+        "value": "2026-04-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B492",
+      "props": {
+        "value": "2026-04-26",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B493",
+      "props": {
+        "value": "2026-03-21",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B494",
+      "props": {
+        "value": "2026-05-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B495",
+      "props": {
+        "value": "2026-01-25",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B496",
+      "props": {
+        "value": "2026-02-10",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B497",
+      "props": {
+        "value": "2026-04-16",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B498",
+      "props": {
+        "value": "2026-06-13",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B499",
+      "props": {
+        "value": "2026-06-29",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B500",
+      "props": {
+        "value": "2026-05-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/B501",
+      "props": {
+        "value": "2026-06-23",
+        "type": "string"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/A1:Q1",
+      "props": {
+        "font.bold": "true",
+        "border.left": "thin",
+        "border.right": "thin",
+        "border.top": "thin",
+        "border.bottom": "thin",
+        "alignment.horizontal": "center",
+        "alignment.vertical": "top"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[A]",
+      "props": {
+        "width": "10"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[B]",
+      "props": {
+        "width": "12"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[C]",
+      "props": {
+        "width": "11"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[D]",
+      "props": {
+        "width": "15"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[E]",
+      "props": {
+        "width": "8"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[F]",
+      "props": {
+        "width": "17"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[G]",
+      "props": {
+        "width": "22"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[H]",
+      "props": {
+        "width": "10"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[I]",
+      "props": {
+        "width": "12"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[J]",
+      "props": {
+        "width": "12"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[K]",
+      "props": {
+        "width": "17"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[L]",
+      "props": {
+        "width": "18"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[M]",
+      "props": {
+        "width": "14"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[N]",
+      "props": {
+        "width": "8"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[O]",
+      "props": {
+        "width": "10"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[P]",
+      "props": {
+        "width": "9"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data/col[Q]",
+      "props": {
+        "width": "9"
+      }
+    },
+    {
+      "command": "set",
+      "path": "/Myntra Sales Data",
+      "props": {
+        "freeze": "A2",
+        "autoFilter": "A1:Q501",
+        "margin.top": "1in",
+        "margin.bottom": "1in",
+        "margin.left": "0.75in",
+        "margin.right": "0.75in",
+        "margin.header": "0.5in",
+        "margin.footer": "0.5in"
+      }
+    }
+  ]
+}
